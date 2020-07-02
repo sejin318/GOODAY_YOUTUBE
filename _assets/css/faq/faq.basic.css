@@ -1,0 +1,18 @@
+.faq-wrap .faq-search-wrap { margin: 2rem 0; }
+.faq-wrap .faq_img { text-align: center; margin-bottom: 1rem; }
+.faq-wrap .search-wrap { width: 100%; }
+@media (min-width: 768px) { .faq-wrap .search-wrap { width: 500px; } }
+.faq-wrap .faq-list .card-header .btn { font-weight: 600; }
+.faq-wrap .faq-list .card-body { margin-bottom: 3rem; }
+.faq-wrap #faq_wrap { margin: 10px 0 30px; }
+.faq-wrap #faq_wrap h2 { position: absolute; font-size: 0; line-height: 0; overflow: hidden; }
+.faq-wrap .faq_admin { text-align: right; }
+.faq-wrap #faq_wrap ol { margin: 0; padding: 0; list-style: none; }
+.faq-wrap #faq_wrap li { border-bottom: 1px solid #ececec; background: #fff; position: relative; }
+.faq-wrap #faq_wrap li:first-child { border-top: 1px solid #ececec; }
+.faq-wrap #faq_wrap li h3 { min-height: 50px; line-height: 30px; padding: 15px; padding-left: 50px; position: relative; }
+.faq-wrap #faq_wrap li h3 .tit_btn { position: absolute; right: 15px; top: 15px; border: 0; width: 30px; height: 30px; background: #fff; color: #c5cdd8; font-size: 1.2em; }
+.faq-wrap #faq_wrap li h3 .tit_bg { display: inline-block; position: absolute; top: 15px; left: 15px; text-align: center; color: #000; font-size: 1.6em; }
+.faq-wrap #faq_wrap li h3.faq_li_open a { color: #3a8afd; }
+
+/*# sourceMappingURL=faq.basic.css.map */

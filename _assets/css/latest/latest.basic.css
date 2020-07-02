@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* 기본 텍스트 최신글 */
+.basic-latest { /* 최신글 제목 */ /* 날짜 표시 */ /* 댓글수 표시 */ }
+.basic-latest .padding-box { padding-left: .5rem; padding-right: .5rem; }
+.basic-latest .latest-title { font-family: "Noto Sans KR", sans-serif; font-weight: 600; display: block; font-size: 1.25rem; text-align: center; padding: 10px; margin-bottom: 0; }
+.basic-latest ul, .basic-latest li { list-style: none; display: block; }
+.basic-latest ul { margin: 0; padding: 0; }
+.basic-latest li { line-height: 2.5rem; }
+.basic-latest li:last-child { border-bottom: none !important; }
+.basic-latest .latest-info { padding: 0 .25rem; color: #6c757d; display: inline-block; }
+.basic-latest .datetime { font-size: .75rem; }
+@media (min-width: 576px) { .basic-latest .datetime { display: inline-block; } }
+.basic-latest .ca-name { color: #007bff; font-weight: 600; }
+.basic-latest .comment-count-wrap { position: relative; }
+.basic-latest .comment-count-wrap .cnt_cmt { position: absolute; display: block; font-size: .6rem; left: 9px; top: 0; font-weight: 600; }
+.basic-latest .empty-item { text-align: center; min-height: 209px; vertical-align: middle; }
+
+div.latest-simple div.basic-latest { background-color: #fff !important; box-shadow: 1px 1px 3px rgba(173, 181, 189, 0.1); }
+div.latest-simple div.basic-latest h3.latest-title { background-color: #fff !important; }
+
+body.colorset-dark div.latest-simple div.basic-latest { background-color: #212529 !important; box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.1); }
+body.colorset-dark div.latest-simple div.basic-latest h3.latest-title { background-color: #212529 !important; }
+
+/*# sourceMappingURL=latest.basic.css.map */

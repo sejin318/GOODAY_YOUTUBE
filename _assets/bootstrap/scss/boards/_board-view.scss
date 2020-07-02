@@ -1,0 +1,327 @@
+@charset "utf-8";
+/* 게시판 읽기 */
+
+.board-view-wrap {
+    background-color: $white;
+
+    .board-title {
+        font-size: 1.5rem;
+        text-align: right;
+        padding: .5rem;
+        font-weight: 600;
+        color: $gray-500;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+    ul,
+    li {
+        list-style: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .bv-header {
+        border-bottom: 1px solid $gray-300;
+
+        .bv-title {
+            font-size: 1.5rem;
+            //font-weight: 600;
+
+            .bv-category {
+                color: $primary;
+            }
+        }
+    }
+
+    .bv-info {
+        position: relative;
+
+        .profile-info {
+            @include clearfix;
+            background-color: $gray-200;
+        }
+
+        .profile-comment {
+            line-height: 120%;
+            padding-top: .5rem;
+            min-width: 0;
+
+            @include media-breakpoint-up(md) {
+                line-height: 60px;
+                padding-top: 0;
+            }
+        }
+    }
+
+    .board-attach,
+    .board-links {
+        border: 1px solid $gray-300;
+        background-color: $gray-100;
+        padding: 1rem;
+
+        h2 {
+            @include sr-only;
+        }
+
+        .row.no-gutters {
+            .at-box {
+                .card {
+                    margin-right: 0;
+
+                    @include media-breakpoint-up(md) {
+                        margin-right: .1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .befor-next-buttons {
+        .btn-group {
+            width: 100%;
+        }
+
+        a {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: left;
+
+            @include media-breakpoint-up(md) {
+                white-space: normal;
+            }
+        }
+
+        .nb_date {
+            font-size: .875rem;
+            color: $gray-600;
+        }
+    }
+
+    .board-contents-wrap {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .board-contents {
+            min-height: 100px;
+            white-space: normal;
+            word-break: break-all;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    /* exif 버튼 , 정보 */
+    .image-exif {
+        position: relative;
+        width: fit-content;
+
+        .show-item {
+            display: block !important;
+        }
+
+        .view-exif-info {
+            background-color: Transparent;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+            right: 0;
+            top: 0;
+            position: absolute;
+            padding: .5rem;
+
+            i {
+                font-size: 2.2rem;
+                background-color: transparent;
+                opacity: .7;
+                color: #ddd;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+
+                &:hover {
+                    color: #0033ff;
+                }
+            }
+        }
+
+        .exif-info {
+            padding: .5rem;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            right: 30px;
+            top: 0px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 3;
+
+            .kakao-map {
+                width: 100%;
+                height: 250px;
+                min-width: 290px;
+
+                @include media-breakpoint-up(md) {
+                    height: 350px;
+                    min-width: 500px;
+                }
+            }
+
+            .ex-list {
+                color: #fff;
+                margin: 0;
+                padding: 0;
+                font-size: .75rem;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+                display: block;
+                float: left;
+
+                li {
+                    display: block;
+                    padding: .25rem;
+                    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    span {
+                        display: inline-block;
+                        min-width: 80px;
+                        font-weight: 600;
+                        text-align: right;
+                        padding-right: .25rem;
+                        color: rgb(42, 238, 173);
+                    }
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .embera-embed-responsive {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+        padding-bottom: 50%;
+    }
+
+    .embera-embed-responsive-item {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    .memo-save-result {
+        z-index: 1000;
+
+    }
+
+    .memo-delete {
+        display: none;
+    }
+
+    .btn-memo {
+        .badge {
+            font-weight: 400;
+            font-size: .75rem;
+        }
+    }
+
+    .file-point-wrap {
+        .card-title {
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 600;
+        }
+
+        .card-img-top {
+            background-color: $gray-500;
+        }
+    }
+
+    .write-title {
+        font-family: "Noto Sans KR", sans-serif;
+        font-weight: 500;
+        border-bottom: 1px solid $gray-500;
+        font-size: 1.125rem;
+        padding: .25rem 0;
+    }
+}
+
+//youtube player
+.youtube-view-wrap {
+    .youtube-image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        position: relative;
+        height: 120px;
+        width: auto;
+
+        .play-state {
+            font-size: 2.5rem;
+            opacity: .3;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        .play-state.active {
+            font-size: 4rem;
+            opacity: .8;
+            color: $primary;
+
+            i {
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+
+    .youtube-title {
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: .75rem;
+        font-weight: 400;
+        line-height: 1rem;
+        max-height: 2rem;
+    }
+
+}
+
+.board-contents {
+    h3 {
+        strong {
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    .rounded.d-block {
+        box-shadow: 2px 2px 10px rgba($color: $dark, $alpha: .25);
+    }
+}
+

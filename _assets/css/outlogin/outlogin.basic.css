@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* basic 아웃로그인 */
+.outlogin-basic-wrap hr { margin: 0 0 0.5rem 0; }
+
+.outlogin-basic-wrap .form-group.form-subject .input-group .input-group-prepend, .outlogin-mobile-basic-wrap .form-group.form-subject .input-group .input-group-prepend { width: 50px; text-align: center; }
+.outlogin-basic-wrap .form-group.form-subject .input-group .input-group-prepend .input-group-text, .outlogin-mobile-basic-wrap .form-group.form-subject .input-group .input-group-prepend .input-group-text { width: 100%; }
+.outlogin-basic-wrap .form-group.form-subject .input-group + .input-group input, .outlogin-basic-wrap .form-group.form-subject .input-group + .input-group span, .outlogin-mobile-basic-wrap .form-group.form-subject .input-group + .input-group input, .outlogin-mobile-basic-wrap .form-group.form-subject .input-group + .input-group span { border-top: none; }
+.outlogin-basic-wrap .form-group, .outlogin-mobile-basic-wrap .form-group { margin-bottom: .5rem; }
+.outlogin-basic-wrap .nick-name, .outlogin-mobile-basic-wrap .nick-name { font-weight: 600; }
+.outlogin-basic-wrap .member-info, .outlogin-mobile-basic-wrap .member-info { border-bottom: 1px solid #dee2e6; }
+.outlogin-basic-wrap .member-modify, .outlogin-mobile-basic-wrap .member-modify { font-size: .875rem; }
+.outlogin-basic-wrap .member-private-info, .outlogin-mobile-basic-wrap .member-private-info { font-size: .875rem; }
+.outlogin-basic-wrap .member-private-info .mb-items, .outlogin-mobile-basic-wrap .member-private-info .mb-items { background-color: #e9ecef; height: 40px; line-height: 40px; text-align: center; border-right: 1px solid #cfd5db; }
+.outlogin-basic-wrap .member-private-info .mb-items:last-child, .outlogin-mobile-basic-wrap .member-private-info .mb-items:last-child { border-right: 1px solid transparent; }
+.outlogin-basic-wrap .profile-image, .outlogin-mobile-basic-wrap .profile-image { margin-right: 5px; }
+
+/*# sourceMappingURL=outlogin.basic.css.map */

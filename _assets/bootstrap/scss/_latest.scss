@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/*
+#################
+# 최신글 CSS 시작
+#################
+*/
+
+
+
+
+/* 기본 텍스트 최신글 */
+.basic-latest {
+    background-color: $white;
+
+    .padding-box {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    /* 최신글 제목 */
+    .latest-title {
+        display: block;
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        background-color: $gray-100;
+        margin-bottom: 0;
+    }
+
+    ul,
+    li {
+        list-style: none;
+        display: block;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        line-height: 2.5rem;
+
+        &:last-child {
+            border-bottom: none !important;
+        }
+    }
+
+    .latest-info {
+        padding: 0 .25rem;
+        color: $gray-600;
+        display: inline-block;
+    }
+
+    /* 날짜 표시, 모바일은 숨김 */
+    .datetime {
+        display: none;
+        font-size: .75rem;
+
+        @include media-breakpoint-up(sm) {
+            display: inline-block;
+        }
+    }
+
+    /* 댓글수 표시 */
+    .comment-count-wrap {
+        position: relative;
+
+        .cnt_cmt {
+            position: absolute;
+            display: block;
+            font-size: .6rem;
+            left: 9px;
+            top: 0;
+            font-weight: 600;
+        }
+    }
+}
+
+
+/*
+#################
+# 최신글 CSS 끝
+#################
+*/

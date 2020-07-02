@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import "../mixins";
+@import "../functions";
+@import "../variables";
+
+.faq-wrap {
+    .faq-search-wrap {
+        margin: 2rem 0;
+    }
+
+    .faq_img {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .search-wrap {
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            width: 500px;
+        }
+    }
+
+    .faq-list {
+        .card-header {
+            .btn{
+                font-weight: 600;
+            }
+        }
+        .card-body{
+            margin-bottom: 3rem;
+        }
+    }
+
+    #faq_wrap {
+        margin: 10px 0 30px;
+
+        h2 {
+            position: absolute;
+            font-size: 0;
+            line-height: 0;
+            overflow: hidden;
+        }
+    }
+
+    .faq_admin {
+        text-align: right;
+    }
+
+    #faq_wrap {
+        ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            border-bottom: 1px solid #ececec;
+            background: #fff;
+            position: relative;
+
+            &:first-child {
+                border-top: 1px solid #ececec;
+            }
+
+            h3 {
+                min-height: 50px;
+                line-height: 30px;
+                padding: 15px;
+                padding-left: 50px;
+                position: relative;
+
+                .tit_btn {
+                    position: absolute;
+                    right: 15px;
+                    top: 15px;
+                    border: 0;
+                    width: 30px;
+                    height: 30px;
+                    background: #fff;
+                    color: #c5cdd8;
+                    font-size: 1.2em;
+                }
+
+                .tit_bg {
+                    display: inline-block;
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    text-align: center;
+                    color: #000;
+                    font-size: 1.6em;
+                }
+
+                &.faq_li_open a {
+                    color: #3a8afd;
+                }
+            }
+        }
+    }
+
+
+
+}

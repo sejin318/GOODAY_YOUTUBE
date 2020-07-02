@@ -1,0 +1,15 @@
+@charset "utf-8";
+$font-size-base: 0.875rem;
+
+.comment-uploader-wrap {
+    .custom-file-label {
+        height: calc(1.5em + 0.75rem + 5px);
+        line-height: 1.875;
+    }
+
+    .custom-file-label::after {
+        line-height: 1.875;
+        height: calc(1.5em + 0.75rem + 3px);
+        content: "이미지 찾기";
+    }
+}

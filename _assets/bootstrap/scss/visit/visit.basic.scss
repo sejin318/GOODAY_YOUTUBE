@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import "../mixins";
+@import "../functions";
+@import "../variables";
+
+// Tail visit
+.tail-wrap {
+    .breadcrumb {
+        margin-bottom: 0;
+        background-color: transparent;
+    }
+}

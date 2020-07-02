@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* Hero Header */
+@import "../../../_assets/bootstrap/scss/functions";
+@import "../../../_assets//bootstrap/scss/variables";
+@import "../../../_assets//bootstrap/scss/mixins";
+$menu-height : 81px;
+$hero-height : 320px;
+
+.top-hero-section {
+    &::before {
+        //background: var(--herobackground) center center no-repeat;
+        //background: url(/images/trees-park.jpg) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    //hero max-height animation
+    -webkit-transition: max-height .35s;
+    -moz-transition: max-height .35s;
+    -ms-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+
+    top: -$menu-height;
+    margin-bottom: -$menu-height !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+
+    height: $hero-height;
+    max-height: $hero-height;
+
+    @include media-breakpoint-up(md) {
+        top: -$menu-height;
+        margin-bottom: -$menu-height !important;
+        height: $hero-height * 1.6;
+        max-height: $hero-height * 1.6;
+    }
+
+    @include media-breakpoint-up(lg) {
+        top: -$menu-height;
+        margin-bottom: -$menu-height !important;
+        height: $hero-height * 2;
+        max-height: $hero-height * 2;
+    }
+
+    .hero-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding-top: ($menu-height / 2);
+
+        .hero-title {
+            font-weight: 900;
+            font-size: 2rem;
+            font-family: "Noto Sans KR", sans-serif;
+            text-shadow: 2px 2px .5rem rgba($color: $dark, $alpha: .5);
+
+            @include media-breakpoint-up(md) {
+                font-size: 3.5rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 4.5rem;
+            }
+
+            //fade in 텍스트 출력
+            -webkit-animation: fade-in 3s ease-out both;
+            animation: fade-in 3s ease-out both;
+        }
+
+        .lead-text {
+            text-shadow: 2px 2px .25rem rgba($color: $black, $alpha: .75);
+
+            //fade in 텍스트 출력
+            -webkit-animation: fade-in 3s ease-out both;
+            animation: fade-in 3s ease-out both;
+            font-size: 1rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.25rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}
+
+.top-hero-section.background-zoom {
+    &::before {
+        -webkit-animation: kenburns-top-right 5s ease-out both;
+        animation: kenburns-top-right 5s ease-out both;
+        content: "";
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+}
+
+section.height-scale-down {
+    max-height: 250px;
+
+    @include media-breakpoint-up(md) {
+        max-height: 350px;
+    }
+}
+
+section.height-scale-down-subpage {
+    max-height: 150px !important;
+
+    @include media-breakpoint-up(md) {
+        max-height: 200px !important;
+    }
+}
+
+.top-hero-section.sub-page-hero {
+    height: $hero-height / 2;
+    max-height: $hero-height / 2;
+
+    @include media-breakpoint-up(md) {
+        top: -$menu-height;
+        margin-bottom: -$menu-height !important;
+        height: $hero-height * 1.6 / 2;
+        max-height: $hero-height * 1.6 / 2;
+    }
+
+    @include media-breakpoint-up(lg) {
+        top: -$menu-height;
+        margin-bottom: -$menu-height !important;
+        height: $hero-height * 2 / 2;
+        max-height: $hero-height * 2 /2;
+    }
+}

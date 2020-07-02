@@ -1,0 +1,71 @@
+/* Default pc menu */
+.default-pc-menu-wrap { z-index: 100; }
+.default-pc-menu-wrap .main-menu-list { position: relative; position: relative; padding-left: .15rem; padding-right: .15rem; z-index: 1; padding-left: .75rem; padding-right: .75rem; }
+@media (min-width: 992px) { .default-pc-menu-wrap .main-menu-list { padding-left: .25rem; padding-right: .25rem; } }
+@media (min-width: 1200px) { .default-pc-menu-wrap .main-menu-list { padding-left: .5rem; padding-right: .5rem; } }
+.default-pc-menu-wrap .main-menu-list .submenu-wrap { z-index: 100; top: 100%; display: none; position: absolute; left: 0; background-color: #495057; border: 1px solid #343a40; padding: .5rem; min-width: 10rem; }
+.default-pc-menu-wrap .main-menu-list .submenu-wrap .sub-menu-link { color: #f8f9fa; display: block; padding: .2rem .5rem; }
+.default-pc-menu-wrap .main-menu-list .main-menu-link { display: block; font-size: 1rem; font-weight: 600; color: #e9ecef; padding: .5rem .75rem; border-top: .25rem solid transparent; border-bottom: .25rem solid transparent; font-family: "Noto Sans KR", sans-serif; }
+.default-pc-menu-wrap .main-menu-list .main-menu-link:hover { border-top-color: rgba(255, 255, 255, 0.25); }
+.default-pc-menu-wrap .main-menu-list:hover .submenu-wrap { display: block !important; }
+.default-pc-menu-wrap .main-menu-list:last-child .submenu-wrap { right: 0; left: auto; }
+.default-pc-menu-wrap nav.bg-white .top-quick-menu .nav-link { color: #495057 !important; }
+.default-pc-menu-wrap nav.bg-white .main-menu-list .submenu-wrap { background-color: #fff; border: 1px solid transparent; }
+.default-pc-menu-wrap nav.bg-white .main-menu-list .submenu-wrap .sub-menu-link { color: #495057; }
+.default-pc-menu-wrap nav.bg-white .main-menu-list .main-menu-link { color: #495057; }
+.default-pc-menu-wrap nav.bg-white .main-menu-list .main-menu-link:hover { border-top-color: rgba(255, 255, 255, 0.25); }
+.default-pc-menu-wrap nav.bg-light .top-quick-menu .nav-link { color: #495057 !important; }
+.default-pc-menu-wrap nav.bg-light .main-menu-list .submenu-wrap { background-color: #fff; border: 1px solid transparent; }
+.default-pc-menu-wrap nav.bg-light .main-menu-list .submenu-wrap .sub-menu-link { color: #495057; }
+.default-pc-menu-wrap nav.bg-light .main-menu-list .main-menu-link { color: #495057; }
+.default-pc-menu-wrap nav.bg-light .main-menu-list .main-menu-link:hover { border-top-color: rgba(255, 255, 255, 0.25); }
+.default-pc-menu-wrap nav.bg-dark .navbar-toggler.c-button { color: #fff; }
+.default-pc-menu-wrap nav.bg-dark .top-quick-menu .nav-link { color: #f8f9fa !important; }
+.default-pc-menu-wrap nav.bg-dark .main-menu-list .submenu-wrap { background-color: #32373d; border: 1px solid transparent; }
+.default-pc-menu-wrap nav.bg-dark .main-menu-list .submenu-wrap .sub-menu-link { color: #fff; text-shadow: 1px 1px 1px rgba(52, 58, 64, 0.5); }
+.default-pc-menu-wrap nav.bg-dark .main-menu-list .main-menu-link { color: #fff; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.25); }
+.default-pc-menu-wrap nav.bg-dark .main-menu-list .main-menu-link:hover { border-top-color: rgba(255, 255, 255, 0.25); text-shadow: 2px 2px 4px rgba(52, 58, 64, 0.5); }
+.default-pc-menu-wrap nav.bg-primary .navbar-toggler.c-button { color: #fff; }
+.default-pc-menu-wrap nav.bg-primary .top-quick-menu .nav-link { color: #f8f9fa !important; }
+.default-pc-menu-wrap nav.bg-primary .main-menu-list .submenu-wrap { background-color: #0079fa; border: 1px solid transparent; }
+.default-pc-menu-wrap nav.bg-primary .main-menu-list .submenu-wrap .sub-menu-link { color: #fff; text-shadow: 1px 1px 1px rgba(52, 58, 64, 0.5); }
+.default-pc-menu-wrap nav.bg-primary .main-menu-list .main-menu-link { color: #fff; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.25); }
+.default-pc-menu-wrap nav.bg-primary .main-menu-list .main-menu-link:hover { border-top-color: rgba(255, 255, 255, 0.25); text-shadow: 2px 2px 4px rgba(52, 58, 64, 0.5); }
+.default-pc-menu-wrap nav.bg-secondary .navbar-toggler.c-button { color: #fff; }
+.default-pc-menu-wrap nav.bg-secondary .top-quick-menu .nav-link { color: #f8f9fa !important; }
+.default-pc-menu-wrap nav.bg-secondary .main-menu-list .submenu-wrap { background-color: #6a727a; border: 1px solid transparent; }
+.default-pc-menu-wrap nav.bg-secondary .main-menu-list .submenu-wrap .sub-menu-link { color: #fff; text-shadow: 1px 1px 1px rgba(52, 58, 64, 0.5); }
+.default-pc-menu-wrap nav.bg-secondary .main-menu-list .main-menu-link { color: #fff; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.25); }
+.default-pc-menu-wrap nav.bg-secondary .main-menu-list .main-menu-link:hover { border-top-color: rgba(255, 255, 255, 0.25); text-shadow: 2px 2px 4px rgba(52, 58, 64, 0.5); }
+.default-pc-menu-wrap nav.bg-success .navbar-toggler.c-button { color: #fff; }
+.default-pc-menu-wrap nav.bg-success .top-quick-menu .nav-link { color: #f8f9fa !important; }
+.default-pc-menu-wrap nav.bg-success .main-menu-list .submenu-wrap { background-color: #27a343; border: 1px solid transparent; }
+.default-pc-menu-wrap nav.bg-success .main-menu-list .submenu-wrap .sub-menu-link { color: #fff; text-shadow: 1px 1px 1px rgba(52, 58, 64, 0.5); }
+.default-pc-menu-wrap nav.bg-success .main-menu-list .main-menu-link { color: #fff; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.25); }
+.default-pc-menu-wrap nav.bg-success .main-menu-list .main-menu-link:hover { border-top-color: rgba(255, 255, 255, 0.25); text-shadow: 2px 2px 4px rgba(52, 58, 64, 0.5); }
+.default-pc-menu-wrap nav.bg-danger .navbar-toggler.c-button { color: #fff; }
+.default-pc-menu-wrap nav.bg-danger .top-quick-menu .nav-link { color: #f8f9fa !important; }
+.default-pc-menu-wrap nav.bg-danger .main-menu-list .submenu-wrap { background-color: #db3141; border: 1px solid transparent; }
+.default-pc-menu-wrap nav.bg-danger .main-menu-list .submenu-wrap .sub-menu-link { color: #fff; text-shadow: 1px 1px 1px rgba(52, 58, 64, 0.5); }
+.default-pc-menu-wrap nav.bg-danger .main-menu-list .main-menu-link { color: #fff; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.25); }
+.default-pc-menu-wrap nav.bg-danger .main-menu-list .main-menu-link:hover { border-top-color: rgba(255, 255, 255, 0.25); text-shadow: 2px 2px 4px rgba(52, 58, 64, 0.5); }
+.default-pc-menu-wrap nav.bg-warning .navbar-toggler.c-button { color: #343a40; }
+.default-pc-menu-wrap nav.bg-warning .top-quick-menu .nav-link { color: #343a40 !important; }
+.default-pc-menu-wrap nav.bg-warning .main-menu-list .submenu-wrap { background-color: #ffc002; border: 1px solid transparent; }
+.default-pc-menu-wrap nav.bg-warning .main-menu-list .submenu-wrap .sub-menu-link { color: #343a40; }
+.default-pc-menu-wrap nav.bg-warning .main-menu-list .main-menu-link { color: #343a40; text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25); }
+.default-pc-menu-wrap nav.bg-warning .main-menu-list .main-menu-link:hover { border-top-color: rgba(255, 255, 255, 0.25); text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); }
+.default-pc-menu-wrap nav.bg-info .navbar-toggler.c-button { color: #343a40; }
+.default-pc-menu-wrap nav.bg-info .top-quick-menu .nav-link { color: #343a40 !important; }
+.default-pc-menu-wrap nav.bg-info .main-menu-list .submenu-wrap { background-color: #169eb3; border: 1px solid transparent; }
+.default-pc-menu-wrap nav.bg-info .main-menu-list .submenu-wrap .sub-menu-link { color: #343a40; }
+.default-pc-menu-wrap nav.bg-info .main-menu-list .main-menu-link { color: #343a40; text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25); }
+.default-pc-menu-wrap nav.bg-info .main-menu-list .main-menu-link:hover { border-top-color: rgba(255, 255, 255, 0.25); text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); }
+.default-pc-menu-wrap .menu-container { padding-left: 0; padding-right: 0; }
+@media (min-width: 1200px) { .default-pc-menu-wrap .menu-container { padding-left: 15px; padding-right: 15px; } }
+.default-pc-menu-wrap .empty-navigation { font-weight: 500; font-family: "Noto Sans KR", sans-serif; font-size: 1.125rem; color: #fff; text-shadow: 2px 2px 4px rgba(52, 58, 64, 0.75); }
+.default-pc-menu-wrap .empty-navigation a { color: #e9ecef; }
+.default-pc-menu-wrap .bg-light .empty-navigation, .default-pc-menu-wrap .bg-white .empty-navigation { font-weight: 500; font-family: "Noto Sans KR", sans-serif; font-size: 1.125rem; color: #495057; text-shadow: 2px 2px 4px rgba(52, 58, 64, 0.75); }
+.default-pc-menu-wrap .bg-light .empty-navigation a, .default-pc-menu-wrap .bg-white .empty-navigation a { color: #343a40; }
+
+/*# sourceMappingURL=menu.css.map */

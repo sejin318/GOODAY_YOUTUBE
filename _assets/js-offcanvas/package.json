@@ -1,0 +1,92 @@
+{
+  "_from": "js-offcanvas",
+  "_id": "js-offcanvas@1.2.9",
+  "_inBundle": false,
+  "_integrity": "sha512-aOdLHgsQDe8ZbiW5GRrlL/y4C5nqAPe65sHssy1k9GT+MizvJaPsC6OWM/DnpKGn1SuwVF1WIYyuIKzscvk/qg==",
+  "_location": "/js-offcanvas",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "js-offcanvas",
+    "name": "js-offcanvas",
+    "escapedName": "js-offcanvas",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/js-offcanvas/-/js-offcanvas-1.2.9.tgz",
+  "_shasum": "9d0c14491b0310efbf61f705c2b3a40b6ad3d190",
+  "_spec": "js-offcanvas",
+  "_where": "G:\\iwinv-boilerplate.kr",
+  "author": {
+    "name": "Vasileios Mitsaras",
+    "email": "github@vasilis.co",
+    "url": "http://vasilis.co"
+  },
+  "bundleDependencies": false,
+  "config": {
+    "grunt": "grunt",
+    "src": "src",
+    "dist": "dist",
+    "test": "test",
+    "demo": "demo"
+  },
+  "dependencies": {
+    "js-button": "*",
+    "js-trap-tab": "*",
+    "js-utilities": "*"
+  },
+  "deprecated": false,
+  "description": "jQuery Accesible Offcanvas Panels",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "bower": "^1.7.7",
+    "cssnano": "^3.5.2",
+    "glob": "^7.0.3",
+    "grunt": "^0.4.5",
+    "grunt-banner": "^0.6.0",
+    "grunt-bytesize": "^0.1.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-qunit": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-gh-pages": "^1.0.0",
+    "grunt-lintspaces": "^0.7.4",
+    "grunt-mkdir": "^1.0.0",
+    "grunt-modernizr": "^1.0.3",
+    "grunt-postcss": "^0.8.0",
+    "load-grunt-tasks": "^3.4.1",
+    "matchdep": "^1.0.1",
+    "qunitjs": "^1.22.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10",
+    "yarn": ">= 1.0.0"
+  },
+  "homepage": "https://github.com/vmitsaras/js-offcanvas",
+  "keywords": [
+    "jquery",
+    "jquery-plugin",
+    "accesible",
+    "offcanvas"
+  ],
+  "license": "MIT",
+  "main": "src/js-offcanvas.js",
+  "name": "js-offcanvas",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "title": "js-Offcanvas",
+  "version": "1.2.9"
+}

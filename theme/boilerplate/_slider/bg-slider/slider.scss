@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* BG Slider */
+@import "../../../../_assets/bootstrap/scss/functions";
+@import "../../../../_assets//bootstrap/scss/variables";
+@import "../../../../_assets//bootstrap/scss/mixins";
+
+.bg-slider-wrap {
+    position: relative;
+    margin-bottom: 1rem;
+
+    .carousel-bg-image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .font-dark {
+        .carousel-caption {
+            color: #000;
+
+            //text-shadow : 1px 1px 10px $white;
+            //font-weight: 800;
+            a {
+                color: #000;
+                //text-shadow : 1px 1px 10px $white;
+                //font-weight: 600;
+            }
+        }
+    }
+
+    .font-white {
+        .carousel-caption {
+            color: $white;
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    .carousel-caption {
+        margin-top: 20px;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h5 {
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 800;
+            text-shadow: 2px 2px 2px rgba($dark, $alpha: .75);
+            font-size: 1.25rem;
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 4rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                font-size: 3.5rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 3rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                font-size: 2.5rem;
+            }
+
+            a {
+                color: $gray-100;
+                font-family: "Noto Sans KR", sans-serif;
+                font-weight: 800;
+                text-shadow: 2px 2px 2px rgba($dark, $alpha: .75);
+                font-size: 1.25rem;
+
+                @include media-breakpoint-up(xxl) {
+                    font-size: 4rem;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    font-size: 3.5rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 3rem;
+                }
+
+                @include media-breakpoint-up(md) {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        p {
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 500;
+            text-shadow: 2px 2px 2px rgba($dark, $alpha: .75);
+            font-size: .875rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.25rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 1.4rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                font-size: 1.5rem;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 1.525rem;
+            }
+
+            a {
+                color: $gray-100;
+                font-family: "Noto Sans KR", sans-serif;
+                font-weight: 500;
+                text-shadow: 2px 2px 2px rgba($dark, $alpha: .75);
+                font-size: .875rem;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 1.4rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 1.5rem;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    font-size: 1.875rem;
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    font-size: 2rem;
+                }
+
+            }
+        }
+    }
+
+    .embed-responsive-3by1,
+    .embed-responsive-4by1{
+        .carousel-caption {
+            p {
+                display: none;
+
+                @include media-breakpoint-up(md) {
+                    display: block;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .embed-responsive-5by1{
+        .carousel-caption {
+            p {
+                display: none;
+
+                @include media-breakpoint-up(lg) {
+                    display: block;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+
+    .ytp-control-wrap {
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        bottom: 3rem;
+        margin-left: 15%;
+        margin-right: 15%;
+        z-index: 20;
+    }
+}

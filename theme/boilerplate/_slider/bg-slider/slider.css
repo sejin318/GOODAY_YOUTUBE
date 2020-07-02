@@ -1,0 +1,32 @@
+/* BG Slider */
+.bg-slider-wrap { position: relative; margin-bottom: 1rem; }
+.bg-slider-wrap .carousel-bg-image { background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.bg-slider-wrap .font-dark .carousel-caption { color: #000; }
+.bg-slider-wrap .font-dark .carousel-caption a { color: #000; }
+.bg-slider-wrap .font-white .carousel-caption { color: #fff; }
+.bg-slider-wrap .font-white .carousel-caption a { color: #fff; }
+.bg-slider-wrap .carousel-caption { margin-top: 20px; margin-bottom: 0; }
+@media (min-width: 768px) { .bg-slider-wrap .carousel-caption { margin-top: 20px; margin-bottom: 20px; } }
+.bg-slider-wrap .carousel-caption h5 { font-family: "Noto Sans KR", sans-serif; font-weight: 800; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.75); font-size: 1.25rem; font-size: 4rem; }
+@media (min-width: 1200px) { .bg-slider-wrap .carousel-caption h5 { font-size: 3.5rem; } }
+@media (min-width: 992px) { .bg-slider-wrap .carousel-caption h5 { font-size: 3rem; } }
+@media (min-width: 768px) { .bg-slider-wrap .carousel-caption h5 { font-size: 2.5rem; } }
+.bg-slider-wrap .carousel-caption h5 a { color: #f8f9fa; font-family: "Noto Sans KR", sans-serif; font-weight: 800; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.75); font-size: 1.25rem; font-size: 4rem; }
+@media (min-width: 1200px) { .bg-slider-wrap .carousel-caption h5 a { font-size: 3.5rem; } }
+@media (min-width: 992px) { .bg-slider-wrap .carousel-caption h5 a { font-size: 3rem; } }
+@media (min-width: 768px) { .bg-slider-wrap .carousel-caption h5 a { font-size: 2.5rem; } }
+.bg-slider-wrap .carousel-caption p { font-family: "Noto Sans KR", sans-serif; font-weight: 500; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.75); font-size: .875rem; font-size: 1.525rem; }
+@media (min-width: 768px) { .bg-slider-wrap .carousel-caption p { font-size: 1.25rem; } }
+@media (min-width: 992px) { .bg-slider-wrap .carousel-caption p { font-size: 1.4rem; } }
+@media (min-width: 1200px) { .bg-slider-wrap .carousel-caption p { font-size: 1.5rem; } }
+.bg-slider-wrap .carousel-caption p a { color: #f8f9fa; font-family: "Noto Sans KR", sans-serif; font-weight: 500; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.75); font-size: .875rem; font-size: 2rem; }
+@media (min-width: 768px) { .bg-slider-wrap .carousel-caption p a { font-size: 1.4rem; } }
+@media (min-width: 992px) { .bg-slider-wrap .carousel-caption p a { font-size: 1.5rem; } }
+@media (min-width: 1200px) { .bg-slider-wrap .carousel-caption p a { font-size: 1.875rem; } }
+.bg-slider-wrap .embed-responsive-3by1 .carousel-caption p, .bg-slider-wrap .embed-responsive-4by1 .carousel-caption p { display: none; }
+@media (min-width: 768px) { .bg-slider-wrap .embed-responsive-3by1 .carousel-caption p, .bg-slider-wrap .embed-responsive-4by1 .carousel-caption p { display: block; margin-top: 0; margin-bottom: 0; } }
+.bg-slider-wrap .embed-responsive-5by1 .carousel-caption p { display: none; }
+@media (min-width: 992px) { .bg-slider-wrap .embed-responsive-5by1 .carousel-caption p { display: block; margin-top: 0; margin-bottom: 0; } }
+.bg-slider-wrap .ytp-control-wrap { display: flex; justify-content: center; left: 0; right: 0; bottom: 3rem; margin-left: 15%; margin-right: 15%; z-index: 20; }
+
+/*# sourceMappingURL=slider.css.map */

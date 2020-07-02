@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+//Template
+.edit-board-contents {
+    .ebc-header {
+        .title {
+            border-left: 4px solid rgba($color: $primary, $alpha: .75);
+            padding: .1rem .5rem;
+            font-size: 1rem;
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 600;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .text-lead{
+        overflow: hidden;
+    }
+}
+
+.colorset-dark {
+    .edit-board-contents {
+        .ebc-header {
+            .title {
+                color: $gray-200;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+/* NEW */
+.new-board-list .new-board, .new-board-list .new-group, .new-board-list .new-name, .new-board-list .new-date { white-space: nowrap; display: none; text-align: center; }
+@media (min-width: 768px) { .new-board-list .new-board, .new-board-list .new-group, .new-board-list .new-name, .new-board-list .new-date { display: table-cell; } }
+.new-board-list .write-info { display: block; font-size: .75rem; color: #adb5bd; padding-top: .5rem; }
+@media (min-width: 768px) { .new-board-list .write-info { display: none; } }
+
+/*# sourceMappingURL=new.basic.css.map */

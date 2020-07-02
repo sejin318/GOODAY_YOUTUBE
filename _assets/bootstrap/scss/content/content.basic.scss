@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import "../mixins";
+@import "../functions";
+@import "../variables";
+
+.ctt_admin {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    border: 1px solid $gray-500;
+    background-color: $body-bg;
+}
+
+.content_wrap {
+    padding: 1rem 1rem 3rem 1rem;
+}

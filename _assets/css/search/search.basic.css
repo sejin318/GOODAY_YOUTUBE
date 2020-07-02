@@ -1,0 +1,10 @@
+.search-wrap .search-title a { font-weight: 600; font-size: 1.25rem; }
+.search-wrap .search-content { font-size: .875rem; }
+.search-wrap .sch_word { text-decoration: underline; }
+.search-wrap .jumbotron { padding: 2rem; }
+.search-wrap .input-group { flex-direction: column; }
+.search-wrap .input-group .form-control { margin-bottom: 3px; }
+@media (min-width: 768px) { .search-wrap .input-group { flex-direction: row; }
+  .search-wrap .input-group .form-control { margin-bottom: 0; } }
+
+/*# sourceMappingURL=search.basic.css.map */

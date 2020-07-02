@@ -1,0 +1,261 @@
+@charset "utf-8";
+@import "./bootstrap/scss/bootstrap.scss";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* style.css는 ASK-FTP의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.jumbotron-sm {
+    padding: 2rem;
+}
+
+.function-list {
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .alert {
+        font-size: .875rem;
+    }
+}
+
+.file-list {
+    padding-bottom: 3rem;
+
+    th {
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: .5rem;
+        font-size: .875rem;
+        white-space: nowrap;
+    }
+
+    .fa {
+        font-size: .875rem;
+        color: #000000;
+    }
+
+    .directory {
+        font-weight: 600;
+    }
+
+    .phpjs {
+        color: #0138af;
+    }
+
+    .dir-info {
+        overflow: hidden;
+        padding: .5rem 0;
+
+        .dir-count {
+            float: right;
+        }
+    }
+
+    .detail-view {
+        display: block;
+        font-size: .7rem;
+        color: #999;
+    }
+
+    .table {
+        thead {
+            tr {
+                th {
+
+                    &:nth-of-type(2),
+                    &:nth-of-type(3),
+                    &:nth-of-type(4),
+                    &:nth-of-type(5),
+                    &:nth-of-type(6) {
+                        display: none;
+                        text-align: center;
+                    }
+
+                    &:nth-of-type(7) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    &:nth-of-type(1) {
+                        white-space: normal;
+                    }
+
+                    &:nth-of-type(2),
+                    &:nth-of-type(3),
+                    &:nth-of-type(4),
+                    &:nth-of-type(5),
+                    &:nth-of-type(6) {
+                        display: none;
+                        text-align: center;
+                    }
+
+                    &:nth-of-type(7) {
+                        text-align: center;
+
+                        .form-group {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .detail-view {
+            display: none;
+        }
+
+        .table {
+            thead {
+                tr {
+                    th {
+
+                        &:nth-of-type(1),
+                        &:nth-of-type(2),
+                        &:nth-of-type(3),
+                        &:nth-of-type(4),
+                        &:nth-of-type(5),
+                        &:nth-of-type(6),
+                        &:nth-of-type(7) {
+                            display: table-cell;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+
+                        &:nth-of-type(1),
+                        &:nth-of-type(2),
+                        &:nth-of-type(3),
+                        &:nth-of-type(4),
+                        &:nth-of-type(5),
+                        &:nth-of-type(6),
+                        &:nth-of-type(7) {
+                            display: table-cell;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#code_editor {
+    width: 100%;
+    height: 700px;
+    border: 1px solid #666;
+    margin-bottom: 1rem;
+}
+
+.toast {
+    max-width: 90%;
+    position: absolute;
+    width: 480px;
+    top: 150px;
+    z-index: 10;
+
+    @include media-breakpoint-up(md) {
+        max-width: 480px;
+    }
+}
+
+.askftp {
+    .jumbotron {
+        p {
+            margin-bottom: .25rem;
+            font-size: .875rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: .5rem;
+            text-align: center;
+
+            span {
+                display: none;
+            }
+        }
+
+        padding: .5rem;
+        margin-bottom: .5rem;
+
+        @include media-breakpoint-up(md) {
+            h2 {
+                font-size: 2rem;
+                margin: .75rem;
+                text-align: left;
+
+                span {
+                    display: inline;
+                }
+            }
+
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .host-pwd {
+        font-weight: 600;
+        color: #0138af;
+        display: none;
+
+        @include media-breakpoint-up(md) {
+            display: inline;
+        }
+    }
+
+    .mkdir-wrap,
+    .upload-wrap {
+        h3 {
+            font-weight: 600;
+        }
+    }
+}
+
+.login-wrap {
+    display: block;
+    background-color: #fff;
+    max-width: 600px;
+    margin: 2rem auto;
+    width: 100%;
+    padding: 1rem .5rem 2rem;
+    border: 1px solid $gray-300;
+
+    .alert {
+        display: none;
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: 2rem;
+
+        .alert {
+            display: block;
+        }
+    }
+
+    #ftp_port {
+        width: 43px;
+    }
+}
+
+.modal-body {
+    .alert {
+        font-size: .75rem;
+        white-space: normal;
+    }
+}

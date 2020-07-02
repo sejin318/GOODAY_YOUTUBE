@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import "../mixins";
+@import "../functions";
+@import "../variables";
+
+/* 1:1 게시판 목록 */
+.qa-wrap {
+    .table {
+
+        .td_num,
+        .td_name,
+        .td_date,
+        .td_stat {
+            white-space: nowrap;
+        }
+
+        .td_name,
+        .td_date,
+        .td_stat {
+            display: none;
+        }
+
+        @include media-breakpoint-up(sm) {
+
+            .td_name,
+            .td_date,
+            .td_stat {
+                display: table-cell;
+            }
+        }
+
+        .wr-info {
+            font-size: .875rem;
+            text-align: right;
+        }
+
+        .bo_cate_link {
+            font-weight: 600;
+            color: $primary;
+        }
+    }
+}
+
+/* qa 내용보기 */
+.qa-view-wrap {
+    .page-title {
+        .bo_v_cate {
+            color: $primary;
+        }
+    }
+
+    .qa-content-wrap {
+        .qa-content {
+            min-height: 200px;
+        }
+    }
+
+    .bo_cate_link {
+        color: $primary;
+    }
+
+    .table {
+
+        th,
+        td {
+            white-space: nowrap;
+        }
+    }
+}

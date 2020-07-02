@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import "../mixins";
+@import "../functions";
+@import "../variables";
+/*
+Card list pro
+*/
+
+.board-cardpro-list-wrap {
+    .board-image-wrap {
+        position: relative;
+        margin: 0;
+
+        .board-checkbox {
+            left: 1px;
+            top: -1px;
+            z-index: 2;
+        }
+
+        .list-image-link {
+            display: block;
+            overflow: hidden;
+
+            .list-image {
+                width: 100%;
+                height: auto;
+                -moz-transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+
+                &:hover {
+                    -moz-transform: scale(1.2);
+                    -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
+                    z-index: 1;
+                }
+            }
+        }
+
+        .category-wrap {
+            left: 1rem;
+            top: 1rem;
+            background-color: rgba($color: #000000, $alpha: .35);
+            padding: .25rem .5rem;
+            border-radius: .125rem;
+
+            &:hover {
+                background-color: rgba($color: $success, $alpha: .35);
+            }
+
+            .board-category-link {
+                color: $white;
+                font-size: .875rem;
+                font-weight: 600;
+            }
+        }
+
+        .scrap-wrap {
+            right: 1rem;
+            top: 1rem;
+            background-color: rgba($color: #000000, $alpha: .35);
+            padding: .125rem .5rem;
+            border-radius: .125rem;
+
+            &:hover {
+                background-color: rgba($color: $warning, $alpha: .35);
+
+                .scrap-this-item {
+                    color: $gray-800;
+                }
+            }
+
+            .scrap-this-item {
+                color: $white;
+                font-size: 1.25rem;
+                font-weight: 600;
+            }
+            .scrap-this-item.scraped{
+                color: $primary;
+            }
+        }
+
+        .list-icons-wrap {
+            left: 5px;
+            bottom: 5px;
+            .badge{
+                height: 17px;
+            }
+        }
+
+        .list-good-wrap {
+            right: 5px;
+            bottom: 5px;
+            .badge{
+                height: 17px;
+            }
+        }
+    }
+
+    .board-contents-wrap {
+        padding: 1.75rem 1.5rem;
+
+        .card-title {
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        .card-text {
+            line-height: 200%;
+        }
+    }
+
+    .card-footer {
+        .text-datetime {
+            right: 13px;
+            top: 13px;
+            color: $gray-500;
+        }
+    }
+}

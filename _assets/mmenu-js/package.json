@@ -1,0 +1,74 @@
+{
+  "_from": "mmenu-js",
+  "_id": "mmenu-js@8.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-d10ojTeKgnow8PqvL+C1T690so2C2LnQ/kTsbipOyuT7bKit4BwVUr7mjToakJ9w6JCzqbz5KTu2vuTvUNo/TQ==",
+  "_location": "/mmenu-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "mmenu-js",
+    "name": "mmenu-js",
+    "escapedName": "mmenu-js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mmenu-js/-/mmenu-js-8.3.0.tgz",
+  "_shasum": "c4eff8e76b66bddb33e811e8204559cd02d99bd6",
+  "_spec": "mmenu-js",
+  "_where": "G:\\iwinv-boilerplate.kr",
+  "author": {
+    "name": "Fred Heusschen",
+    "email": "info@frebsite.nl"
+  },
+  "bugs": {
+    "url": "https://github.com/FrDH/mmenu-js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "The best javascript plugin for app look-alike on- and off-canvas menus with sliding submenus for your website and webapp.",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-typescript": "^5.0.1",
+    "typescript": "^3.4.5",
+    "webpack-stream": "^5.2.1"
+  },
+  "homepage": "https://github.com/FrDH/mmenu-js#readme",
+  "keywords": [
+    "app",
+    "list",
+    "listview",
+    "megamenu",
+    "menu",
+    "mmenu",
+    "mobile",
+    "navigation",
+    "off-canvas",
+    "on-canvas",
+    "curtain",
+    "panels",
+    "submenu"
+  ],
+  "license": "CC-BY-NC-4.0",
+  "main": "dist/mmenu.js",
+  "module": "src/mmenu.js",
+  "name": "mmenu-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrDH/mmenu-js.git"
+  },
+  "scripts": {
+    "build": "gulp default"
+  },
+  "version": "8.3.0"
+}

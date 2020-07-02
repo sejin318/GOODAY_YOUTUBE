@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*
+####################
+# 회원스킨 CSS 시작
+####################
+*/
+/* 회원로그인 */
+.login-wrap, .member-nohead-wrap { padding-top: 3rem; /* sns */ }
+@media (min-width: 576px) { .login-wrap, .member-nohead-wrap { padding-top: 5rem; } }
+.login-wrap .member-login-box, .login-wrap .member-confirm-box, .member-nohead-wrap .member-login-box, .member-nohead-wrap .member-confirm-box { background-color: #fff; width: 90%; margin: 0 auto; }
+@media (min-width: 576px) { .login-wrap .member-login-box, .login-wrap .member-confirm-box, .member-nohead-wrap .member-login-box, .member-nohead-wrap .member-confirm-box { width: 400px; } }
+.login-wrap .member-login-box .login-title, .login-wrap .member-confirm-box .login-title, .member-nohead-wrap .member-login-box .login-title, .member-nohead-wrap .member-confirm-box .login-title { font-weight: 600; text-align: center; padding: .5rem; font-size: 1.5rem; }
+.login-wrap .login-sns h3, .member-nohead-wrap .login-sns h3 { font-size: 1rem; border-bottom: 1px solid #e9ecef; }
+.login-wrap .login-sns .txt i, .member-nohead-wrap .login-sns .txt i { display: none; }
+
+/* 회원가입 */
+.register-wrap { margin: 0 auto; padding: 1rem 0; width: 100%; }
+@media (min-width: 768px) { .register-wrap { max-width: 800px; } }
+.register-wrap .term-text { height: 120px; font-size: .75rem; }
+.register-wrap section { border: 1px solid #e9ecef; padding: 1rem; background-color: #fff; margin-bottom: 2rem; }
+.register-wrap h1.title { border-bottom: 1px solid #dee2e6; padding: .5rem 0; }
+
+/* 회원가입 - 정보입력*/
+.register-form-wrap { margin: 0 auto; padding: 1rem 0; width: 100%; }
+@media (min-width: 768px) { .register-form-wrap { max-width: 800px; } }
+.register-form-wrap section { border: 1px solid #e9ecef; padding: 1rem; background-color: #fff; margin-bottom: 2rem; }
+.register-form-wrap h1.title { border-bottom: 1px solid #dee2e6; padding: .5rem 0; }
+.register-form-wrap .form-group.form-check { margin-bottom: 0; }
+
+#daum_juso_pagemb_zip { top: 15px; }
+
+/* 회원가입 완료 */
+.register-result-wrap { margin: 0 auto; padding: 1rem 0; width: 100%; }
+@media (min-width: 768px) { .register-result-wrap { max-width: 800px; } }
+
+/* 쪽지스킨 */
+.page-title { border-bottom: 1px solid #ced4da; display: block; position: relative; }
+.page-title .page-count-info { bottom: 5px; right: 5px; font-size: .875rem; display: block; position: absolute; }
+
+.memo-wrap .memo .nav-link.active { background-color: #495057; color: #fff; }
+.memo-wrap .memo-contents { clear: both; padding: 2rem 0; }
+.memo-wrap .memo-contents .btn-memo .badge { font-size: .875rem; font-weight: 400; }
+
+/* 비밀번호 확인*/
+.password-form h1 { display: block; font-size: 1.5rem; text-align: center; padding: 1rem; margin-top: 2rem; }
+.password-form h2 { font-size: 1rem; }
+@media (min-width: 768px) { .password-form { max-width: 500px; } }
+
+/* 포인트내역 */
+.table-wrap caption { caption-side: top; text-align: right; }
+
+/* 폼메일 */
+/*
+####################
+# 회원스킨 CSS 끝
+####################
+*/
+
+/*# sourceMappingURL=member.basic.css.map */

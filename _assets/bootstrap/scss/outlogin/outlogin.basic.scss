@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+@import "../mixins";
+@import "../functions";
+@import "../variables";
+
+/* basic 아웃로그인 */
+.outlogin-basic-wrap {
+    hr {
+        margin: 0 0 .5rem 0 ;
+    }
+}
+
+.outlogin-basic-wrap,
+.outlogin-mobile-basic-wrap {
+    .form-group.form-subject {
+        .input-group {
+            .input-group-prepend {
+                width: 50px;
+                text-align: center;
+
+                .input-group-text {
+                    width: 100%;
+                }
+            }
+        }
+
+        .input-group+.input-group {
+
+            input,
+            span {
+                border-top: none;
+            }
+        }
+    }
+
+    .form-group {
+        margin-bottom: .5rem;
+    }
+
+    .nick-name {
+        font-weight: 600;
+    }
+
+    .member-info {
+        border-bottom: 1px solid $border-color;
+    }
+
+    .member-modify {
+        font-size: .875rem;
+    }
+
+    .member-private-info {
+        font-size: .875rem;
+
+        .mb-items {
+            background-color: $gray-200;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-right: 1px solid darken($border-color, 5%);
+
+            &:last-child {
+                border-right: 1px solid transparent;
+            }
+        }
+    }
+
+    .profile-image {
+        margin-right: 5px;
+    }
+}

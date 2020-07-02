@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "../mixins";
+@import "../functions";
+@import "../variables";
+
+/* NEW */
+.new-board-list {
+
+    .new-board,
+    .new-group,
+    .new-name,
+    .new-date {
+        white-space: nowrap;
+        display: none;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            display: table-cell;
+        }
+    }
+
+    .write-info {
+        display: block;
+        font-size: .75rem;
+        color: $gray-500;
+        padding-top: .5rem;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+}

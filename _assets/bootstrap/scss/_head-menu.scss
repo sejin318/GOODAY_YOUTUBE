@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* 메뉴 기본 스타일 */
+.hover-drop-menu {
+    .dropdown>.dropdown-menu {
+        top: 200%;
+        transition: 0.3s all ease-in-out;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+        top: 100%;
+    }
+
+    .dropdown>.dropdown-toggle:active {
+        /*Without this, clicking will make it sticky*/
+        pointer-events: none;
+    }
+
+}
+
+.login-navi-bar {
+    @include clearfix;
+}
+
+.login-nav-item {
+    a {
+        font-size: .875rem;
+    }
+}

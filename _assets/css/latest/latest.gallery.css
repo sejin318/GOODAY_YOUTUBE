@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* 갤러리 최신글 */
+.gallery-latest { margin: 0; padding: 0; position: relative; /* 최신글 제목 */ /* 날짜 표시, 모바일은 숨김 */ /* 댓글수 표시 */ }
+.gallery-latest .item-list > .col, .gallery-latest .item-list > [class*="col-"] { margin-bottom: 1rem; }
+@media (min-width: 992px) { .gallery-latest .item-list > .col, .gallery-latest .item-list > [class*="col-"] { margin-bottom: 0; } }
+.gallery-latest .latest-title { font-family: "Noto Sans KR", sans-serif; font-weight: 600; }
+.gallery-latest ul, .gallery-latest li { list-style: none; display: block; }
+.gallery-latest ul { margin: 0; padding: 0; }
+.gallery-latest li { line-height: 2.5rem; }
+.gallery-latest li:last-child { border-bottom: none !important; }
+.gallery-latest .subject.text-link { padding: .25rem 0; }
+.gallery-latest .latest-info { padding: 0 .25rem; color: #6c757d; display: inline-block; }
+.gallery-latest .datetime { display: none; font-size: .75rem; }
+@media (min-width: 576px) { .gallery-latest .datetime { display: inline-block; } }
+.gallery-latest .comment-count-wrap { position: relative; }
+.gallery-latest .comment-count-wrap .cnt_cmt { position: absolute; display: block; font-size: .6rem; left: 9px; top: 0; font-weight: 600; }
+.gallery-latest .img-fluid { width: 100%; height: auto; }
+.gallery-latest .image-box .item-stats { position: absolute; left: 2px; bottom: 2px; }
+.gallery-latest .image-box .item-stats .item-stats-list.comments { background-color: rgba(0, 123, 255, 0.5); }
+.gallery-latest .image-box .item-stats .item-stats-list.datetime { width: auto; padding: 0 3px; }
+.gallery-latest .image-box .item-stats .item-stats-list { background-color: rgba(0, 0, 0, 0.35); color: #e9ecef; padding: 0; font-size: 12px; text-align: center; width: 18px; }
+.gallery-latest .desktop-latest-view { display: none; }
+@media (min-width: 768px) { .gallery-latest .desktop-latest-view { display: flex; } }
+.gallery-latest .mobile-latest-view { display: block; }
+@media (min-width: 768px) { .gallery-latest .mobile-latest-view { display: none; } }
+.gallery-latest .mobile-latest-view .subject { text-shadow: 1px 1px #212529; font-family: "Noto Sans KR", sans-serif; font-weight: 600; }
+.gallery-latest .mobile-latest-view .mobile-image .img-fluid { width: 100%; height: auto; }
+
+/* 모바일에서도 목록형으로 출력 */
+.list-view-only .desktop-latest-view { display: flex !important; }
+.list-view-only .mobile-latest-view { display: none !important; }
+
+/*# sourceMappingURL=latest.gallery.css.map */

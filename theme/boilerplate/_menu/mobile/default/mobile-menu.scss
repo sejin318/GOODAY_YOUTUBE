@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* Default Mobile menu */
+@import "../../../../../_assets/bootstrap/scss/functions";
+@import "../../../../../_assets//bootstrap/scss/variables";
+@import "../../../../../_assets//bootstrap/scss/mixins";
+
+.mobile-menu-wrap {
+    .mobile-menu-header {
+        height: 56px;
+        position: relative;
+        border-bottom: 1px solid $border-color;
+        background-color: darken($body-bg, 50%);
+
+        h2 {
+            font-size: 1.875rem;
+            line-height: 56px;
+            text-align: center;
+        }
+
+        .mobile-menu-close {
+            position: absolute;
+            right: 10px;
+            top: 12px;
+
+            i {
+                font-size: 2rem;
+                text-align: center;
+                color: $gray-500;
+            }
+        }
+
+        a,
+        button {
+            &:focus {
+                outline: 0 !important;
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    .mobile-menu-body {
+        padding: 1rem;
+        .mobile-menu {
+            padding-left: 1rem;
+
+            .nav-link {
+                padding: .25rem .75rem;
+                .nav-first-node {
+                    font-weight: 600;
+                }
+            }
+
+            .sub-menu-wrap {
+                .sub-menu-list {
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* 모바일 회원 메뉴 */
+.mobile-member-wrap{
+    .mobile-menu-header {
+        height: 56px;
+        position: relative;
+        border-bottom: 1px solid $border-color;
+        background-color: darken($body-bg, 50%);
+
+        h2 {
+            font-size: 1.875rem;
+            line-height: 56px;
+            text-align: center;
+        }
+
+        .mobile-menu-close {
+            position: absolute;
+            left: 10px;
+            top: 12px;
+
+            i {
+                font-size: 2rem;
+                text-align: center;
+                color: $gray-500;
+            }
+        }
+
+        a,
+        button {
+            &:focus {
+                outline: 0 !important;
+                text-decoration: none !important;
+            }
+        }
+    }
+}

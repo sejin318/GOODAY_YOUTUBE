@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import "../mixins";
+@import "../functions";
+@import "../variables";
+
+.search-wrap {
+    .search-title {
+        a {
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+    }
+
+    .search-content {
+        font-size: .875rem;
+    }
+
+    .sch_word {
+        text-decoration: underline;
+    }
+
+    .jumbotron {
+        padding: 2rem;
+    }
+
+    .input-group {
+        flex-direction: column;
+        .form-control{
+            margin-bottom: 3px;
+        }
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            .form-control{
+                margin-bottom: 0;
+            }
+        }
+        
+    }
+}

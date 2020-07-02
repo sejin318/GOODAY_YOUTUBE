@@ -1,0 +1,406 @@
+@charset "utf-8";
+/* Default pc menu */
+@import "../../../../../_assets/bootstrap/scss/functions";
+@import "../../../../../_assets//bootstrap/scss/variables";
+@import "../../../../../_assets//bootstrap/scss/mixins";
+
+.default-pc-menu-wrap {
+    z-index: 100;
+
+    .main-menu-list {
+        position: relative;
+        position: relative;
+        padding-left: .15rem;
+        padding-right: .15rem;
+        z-index: 1;
+        @include media-breakpoint-up(lg) {
+            padding-left: .25rem;
+            padding-right: .25rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-left: .5rem;
+            padding-right: .5rem;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding-left: .75rem;
+            padding-right: .75rem;
+        }
+
+        .submenu-wrap {
+            z-index: 100;
+            top: 100%;
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: $gray-700;
+            border: 1px solid $gray-800;
+            padding: .5rem;
+            min-width: 10rem;
+
+            .sub-menu-link {
+                color: $gray-100;
+                display: block;
+                padding: .2rem .5rem;
+
+            }
+        }
+
+        .main-menu-link {
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $gray-200;
+            padding: .5rem .75rem;
+            border-top: .25rem solid transparent;
+            border-bottom: .25rem solid transparent;
+            font-family: "Noto Sans KR", sans-serif;
+
+            &:hover {
+                border-top-color: rgba(255, 255, 255, .25);
+            }
+        }
+
+        &:hover {
+            .submenu-wrap {
+                display: block !important;
+            }
+        }
+
+        &:last-child {
+            .submenu-wrap {
+                right: 0;
+                left: auto;
+            }
+        }
+    }
+
+    nav.bg-white {
+        .top-quick-menu {
+            .nav-link {
+                color: $gray-700 !important;
+            }
+        }
+
+        .main-menu-list {
+            .submenu-wrap {
+                background-color: $white;
+                border: 1px solid transparent;
+
+                .sub-menu-link {
+                    color: $gray-700;
+                }
+            }
+
+            .main-menu-link {
+                color: $gray-700;
+
+                &:hover {
+                    border-top-color: rgba(255, 255, 255, .25);
+                }
+            }
+        }
+    }
+
+    nav.bg-light {
+        .top-quick-menu {
+            .nav-link {
+                color: $gray-700 !important;
+            }
+        }
+
+        .main-menu-list {
+            .submenu-wrap {
+                background-color: $white;
+                border: 1px solid transparent;
+
+                .sub-menu-link {
+                    color: $gray-700;
+                }
+            }
+
+            .main-menu-link {
+                color: $gray-700;
+
+                &:hover {
+                    border-top-color: rgba(255, 255, 255, .25);
+                }
+            }
+        }
+    }
+
+    nav.bg-dark {
+        .navbar-toggler.c-button {
+            color: $white;
+        }
+
+        .top-quick-menu {
+            .nav-link {
+                color: $gray-100 !important;
+            }
+        }
+
+        .main-menu-list {
+            .submenu-wrap {
+                background-color: darken($dark, 1%);
+                border: 1px solid transparent;
+
+                .sub-menu-link {
+                    color: $white;
+                    text-shadow: 1px 1px 1px rgba($color: $dark, $alpha: .5);
+                }
+            }
+
+            .main-menu-link {
+                color: $white;
+                text-shadow: 2px 2px 2px rgba($color: $dark, $alpha: .25);
+
+                &:hover {
+                    border-top-color: rgba(255, 255, 255, .25);
+                    text-shadow: 2px 2px 4px rgba($color: $dark, $alpha: .5);
+                }
+            }
+        }
+    }
+
+    nav.bg-primary {
+        .navbar-toggler.c-button {
+            color: $white;
+        }
+
+        .top-quick-menu {
+            .nav-link {
+                color: $gray-100 !important;
+            }
+        }
+
+        .main-menu-list {
+            .submenu-wrap {
+                background-color: darken($primary, 1%);
+                border: 1px solid transparent;
+
+                .sub-menu-link {
+                    color: $white;
+                    text-shadow: 1px 1px 1px rgba($color: $dark, $alpha: .5);
+                }
+            }
+
+            .main-menu-link {
+                color: $white;
+                text-shadow: 2px 2px 2px rgba($color: $dark, $alpha: .25);
+
+                &:hover {
+                    border-top-color: rgba(255, 255, 255, .25);
+                    text-shadow: 2px 2px 4px rgba($color: $dark, $alpha: .5);
+                }
+            }
+        }
+    }
+
+    nav.bg-secondary {
+        .navbar-toggler.c-button {
+            color: $white;
+        }
+
+        .top-quick-menu {
+            .nav-link {
+                color: $gray-100 !important;
+            }
+        }
+
+        .main-menu-list {
+            .submenu-wrap {
+                background-color: darken($secondary, 1%);
+                border: 1px solid transparent;
+
+                .sub-menu-link {
+                    color: $white;
+                    text-shadow: 1px 1px 1px rgba($color: $dark, $alpha: .5);
+                }
+            }
+
+            .main-menu-link {
+                color: $white;
+                text-shadow: 2px 2px 2px rgba($color: $dark, $alpha: .25);
+
+                &:hover {
+                    border-top-color: rgba(255, 255, 255, .25);
+                    text-shadow: 2px 2px 4px rgba($color: $dark, $alpha: .5);
+                }
+            }
+        }
+    }
+
+    nav.bg-success {
+        .navbar-toggler.c-button {
+            color: $white;
+        }
+
+        .top-quick-menu {
+            .nav-link {
+                color: $gray-100 !important;
+            }
+        }
+
+        .main-menu-list {
+            .submenu-wrap {
+                background-color: darken($success, 1%);
+                border: 1px solid transparent;
+
+                .sub-menu-link {
+                    color: $white;
+                    text-shadow: 1px 1px 1px rgba($color: $dark, $alpha: .5);
+                }
+            }
+
+            .main-menu-link {
+                color: $white;
+                text-shadow: 2px 2px 2px rgba($color: $dark, $alpha: .25);
+
+                &:hover {
+                    border-top-color: rgba(255, 255, 255, .25);
+                    text-shadow: 2px 2px 4px rgba($color: $dark, $alpha: .5);
+                }
+            }
+        }
+    }
+
+    nav.bg-danger {
+        .navbar-toggler.c-button {
+            color: $white;
+        }
+
+        .top-quick-menu {
+            .nav-link {
+                color: $gray-100 !important;
+            }
+        }
+
+        .main-menu-list {
+            .submenu-wrap {
+                background-color: darken($danger, 1%);
+                border: 1px solid transparent;
+
+                .sub-menu-link {
+                    color: $white;
+                    text-shadow: 1px 1px 1px rgba($color: $dark, $alpha: .5);
+                }
+            }
+
+            .main-menu-link {
+                color: $white;
+                text-shadow: 2px 2px 2px rgba($color: $dark, $alpha: .25);
+
+                &:hover {
+                    border-top-color: rgba(255, 255, 255, .25);
+                    text-shadow: 2px 2px 4px rgba($color: $dark, $alpha: .5);
+                }
+            }
+        }
+    }
+
+    nav.bg-warning {
+        .navbar-toggler.c-button {
+            color: $dark;
+        }
+
+        .top-quick-menu {
+            .nav-link {
+                color: $dark !important;
+            }
+        }
+
+        .main-menu-list {
+            .submenu-wrap {
+                background-color: darken($warning, 1%);
+                border: 1px solid transparent;
+
+                .sub-menu-link {
+                    color: $dark;
+                }
+            }
+
+            .main-menu-link {
+                color: $dark;
+                text-shadow: 2px 2px 2px rgba($color: $white, $alpha: .25);
+
+                &:hover {
+                    border-top-color: rgba(255, 255, 255, .25);
+                    text-shadow: 2px 2px 4px rgba($color: $white, $alpha: .5);
+                }
+            }
+        }
+    }
+
+    nav.bg-info {
+        .navbar-toggler.c-button {
+            color: $dark;
+        }
+
+        .top-quick-menu {
+            .nav-link {
+                color: $dark !important;
+            }
+        }
+
+        .main-menu-list {
+            .submenu-wrap {
+                background-color: darken($info, 1%);
+                border: 1px solid transparent;
+
+                .sub-menu-link {
+                    color: $dark;
+                }
+            }
+
+            .main-menu-link {
+                color: $dark;
+                text-shadow: 2px 2px 2px rgba($color: $white, $alpha: .25);
+
+                &:hover {
+                    border-top-color: rgba(255, 255, 255, .25);
+                    text-shadow: 2px 2px 4px rgba($color: $white, $alpha: .5);
+                }
+            }
+        }
+    }
+
+    .menu-container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @include media-breakpoint-up(xl) {
+            padding-left: $grid-gutter-width / 2;
+            padding-right: $grid-gutter-width / 2;
+        }
+
+    }
+
+    .empty-navigation {
+        font-weight: 500;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 1.125rem;
+        color: $white;
+        text-shadow: 2px 2px 4px rgba($color: $dark, $alpha: .75);
+
+        a {
+            color: $gray-200;
+        }
+    }
+
+    .bg-light,
+    .bg-white {
+        .empty-navigation {
+            font-weight: 500;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 1.125rem;
+            color: $gray-700;
+            text-shadow: 2px 2px 4px rgba($color: $dark, $alpha: .75);
+
+            a {
+                color: $gray-800;
+            }
+        }
+    }
+}

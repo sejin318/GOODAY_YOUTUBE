@@ -1,0 +1,251 @@
+@charset "utf-8";
+@import "functions";
+@import "_variables";
+@import "mixins";
+
+body {
+    background-color: $black !important;
+}
+
+.c-offcanvas-content-wrap {
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100%;
+    border-bottom: 0px solid #ccc;
+}
+
+header * {
+    display: inline-block;
+    line-height: 3em;
+}
+
+header h1 {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+#wdn_switcher li {
+    color: black;
+    cursor: pointer;
+    height: 1rem;
+    background: url('https://boilerplate.kr/_assets/img/prev-ico.png') no-repeat 0 0;
+    width: 2.5rem;
+}
+
+#wdn_switcher li {
+    text-indent: -9999em;
+    height: 3rem;
+}
+
+li#auto {
+    text-indent: 0;
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 0.11rem;
+    font-size: 0.618rem;
+    font-weight: bold;
+
+}
+
+li#smartphone-landscape {
+    background-position: -8.7rem 0.7rem;
+}
+
+li#smartphone-portrait {
+    background-position: -11.5rem 0.5rem;
+}
+
+li#tablet-portrait {
+    background-position: -5.85rem 0.5rem;
+}
+
+li#tablet-landscape {
+    background-position: -3.2rem 0.5rem;
+}
+
+li#desktop {
+    background-position: 0 0.5rem;
+    margin-right: 0.4em;
+}
+
+#wdn_switcher li.active,
+#wdn_switcher li:hover {
+    background-position: 0 -2.65rem;
+}
+
+#wdn_switcher li#smartphone-landscape.active,
+#wdn_switcher li#smartphone-landscape:hover {
+    background-position: -8.7rem -2.45rem;
+}
+
+#wdn_switcher li#smartphone-portrait.active,
+#wdn_switcher li#smartphone-portrait:hover {
+    background-position: -11.5rem -2.65rem;
+}
+
+#wdn_switcher li#tablet-portrait.active,
+#wdn_switcher li#tablet-portrait:hover {
+    background-position: -5.85rem -2.65rem;
+}
+
+#wdn_switcher li#tablet-landscape.active,
+#wdn_switcher li#tablet-landscape:hover {
+    background-position: -3.2rem -2.65rem;
+}
+
+#site {
+    margin: 0;
+    border: 1px solid #ccc;
+    padding: 0 1rem;
+    width: 16rem;
+    padding-left: 2.5rem;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#site:focus {
+    outline: none;
+    border-color: #76CC52;
+    background: #fff;
+    width: 20rem;
+}
+
+#wdn_framer {
+    margin-top: 4.5rem;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+    height: 100%;
+}
+
+/* article:before, */
+#wdn_framer #mask {
+    display: block;
+    content: ".";
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+    margin-top: 9999px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+iframe {
+    background-color: white;
+    display: block;
+    border: none;
+    margin: 0 auto;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.auto iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.smartphone-portrait iframe {
+    width: 375px;
+    height: 800px;
+    //height: 100%;
+    /* 	margin-top: calc(100% - 240px) */
+}
+
+/* .smartphone-portrait:before, */
+#wdn_framer.smartphone-portrait #mask {
+    margin-top: 100%;
+    /* 	margin-top:calc(480px + 3em); */
+}
+
+.smartphone-landscape iframe {
+    width: 800px;
+    height: 100%;
+    height: 375px;
+}
+
+/* .smartphone-landscape:before, */
+#wdn_framer.smartphone-landscape #mask {
+    margin-top: 375px;
+    /* 	margin-top:calc(320px + 3em) */
+}
+
+.tablet-portrait iframe {
+    width: 783px;
+    //height: 100%;
+    height: 1024px;
+}
+
+/* .tablet-portrait:before, */
+#wdn_framer.tablet-portrait #mask {
+    margin-top: 1024px;
+    /* 	margin-top:calc(1024px + 3em) */
+}
+
+.tablet-landscape iframe {
+    width: 1039px;
+    //height: 100%;
+    height: 768px;
+}
+
+/* .tablet-landscape:before, */
+#wdn_framer.tablet-landscape #mask {
+    margin-top: 768px;
+    /* 	margin-top:calc(768px + 3em) */
+}
+
+.desktop iframe {
+    width: 1200px;
+    height: 100%;
+    /* 	height: 900px; */
+}
+
+/* .desktop:before, */
+.desktop #mask {
+    margin-top: 900px;
+    /* 	margin-top:calc(900px + 3em) */
+}
+
+@media screen and (max-width:30em) {
+    form {
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid #ccc;
+        -webkit-appearance: none;
+    }
+
+    #site {
+        background-color: white;
+        border-color: #aaa;
+        margin: 0.5em;
+        position: fixed;
+        right: 3.99em;
+        left: 0px;
+        width: auto;
+        -webkit-appearance: none;
+    }
+
+    #changeSite {
+        float: right;
+        margin: 0.5em;
+    }
+
+    #wdn_switcher {
+        width: 16em;
+        margin: auto
+    }
+
+}

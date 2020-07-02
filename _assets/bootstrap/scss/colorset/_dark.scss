@@ -1,0 +1,458 @@
+@charset "utf-8";
+$dark-bg-color : $gray-800;
+
+/* colorset - dark */
+body.colorset-dark {
+
+    .background-1 {
+        background-color: $gray-100 !important;
+    }
+
+    .background-2 {
+        background-color: $gray-200 !important;
+    }
+
+    .background-3 {
+        background-color: $gray-300 !important;
+    }
+
+    .background-4 {
+        background-color: $gray-400 !important;
+    }
+
+    .background-5 {
+        background-color: $gray-500 !important;
+    }
+
+    .background-6 {
+        background-color: $gray-600 !important;
+    }
+
+    .background-7 {
+        background-color: $gray-700 !important;
+    }
+
+    .background-8 {
+        background-color: $gray-800 !important;
+    }
+
+    .background-9 {
+        background-color: $gray-900 !important;
+    }
+
+    .border-color-1 {
+        border-color: $gray-100 !important;
+    }
+
+    .border-color-2 {
+        border-color: $gray-200 !important;
+    }
+
+    .border-color-3 {
+        border-color: $gray-300 !important;
+    }
+
+    .border-color-4 {
+        border-color: $gray-400 !important;
+    }
+
+    .border-color-5 {
+        border-color: $gray-500 !important;
+    }
+
+    .border-color-6 {
+        border-color: $gray-600 !important;
+    }
+
+    .border-color-7 {
+        border-color: $gray-700 !important;
+    }
+
+    .border-color-8 {
+        border-color: $gray-800 !important;
+    }
+
+    .border-color-9 {
+        border-color: $gray-900 !important;
+    }
+
+    /* 버튼 */
+    .btn-outline-secondary {
+        color: $gray-400;
+        border-color: $gray-500;
+
+        &:hover {
+            background: $gray-900;
+            border-color: $border-color;
+        }
+    }
+
+    /* 사이드메뉴 */
+    .aside {
+        background-color: transparent;
+
+        .main-menu {
+            background-color: $gray-700;
+            border-color: $gray-600;
+        }
+    }
+
+    /* 게시판 목록 */
+    .board-basic-list {
+
+        /* 게시판 타이틀 */
+        .board-title {
+            color: $gray-400;
+        }
+
+        /* 카테고리 */
+        .board-category {
+            .breadcrumb {
+                background-color: $gray-600;
+
+                .breadcrumb-item+.breadcrumb-item {
+                    &::before {
+                        color: $gray-500;
+                    }
+
+                }
+
+                a {
+                    color: $gray-200;
+                }
+            }
+        }
+
+        /* 목록 */
+        .board-table-wrap {
+            .table {
+                color: $gray-300;
+
+                tbody {
+                    tr:nth-of-type(even) {
+                        background-color: rgba(0, 0, 0, .3);
+                    }
+
+                    td {
+                        color: $gray-300;
+                        border-top: 1px solid rgba(0, 0, 0, .5);
+
+                        /* 제목 */
+                        .bo_tit {
+                            .bo_cate_link {
+                                color: #62aeff;
+                            }
+
+                            a {
+                                color: $gray-300;
+                                font-weight: 100;
+                            }
+                        }
+                    }
+
+                    /* 회원메뉴 */
+                    td.tcell {
+                        .sv_member {
+                            color: $gray-200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* 게시물 보기 */
+    .board-view-wrap {
+        background-color: transparent;
+
+        /* 게시판 제목 */
+        .board-title {
+            color: $gray-200;
+        }
+
+        /* 게시물 제목 */
+        .bv-title {
+            color: $gray-100;
+        }
+
+        /* 게시물 정보 */
+        .bv-info {
+            .profile-info {
+                background-color: $gray-700;
+                color: $gray-500;
+
+                a {
+                    color: $gray-500;
+                }
+            }
+        }
+
+        /* 컨텐츠 */
+        .board-contents-wrap {
+            .board-contents {
+                color: $gray-100;
+            }
+        }
+
+        /* 링크, 첨부 */
+        .board-attach,
+        .board-links {
+            background-color: $gray-700;
+            border-color: $border-color;
+        }
+    }
+
+    /* 댓글 */
+    .comment-wrap {
+        .comment-box {
+            background-color: $dark-bg-color;
+
+            .profile-wrap {
+                background-color: $gray-700;
+                border: 1px solid transparent;
+
+                .btn-toolbar {
+                    .btn-outline-secondary {
+                        color: $gray-100;
+                    }
+
+                    .btn-outline-danger {
+                        background-color: #ff8585;
+                        color: #ffd2d2;
+                    }
+                }
+            }
+
+            .cm_wrap {
+                background-color: $gray-900;
+                color: $gray-300;
+            }
+
+            .comments-header {
+                color: $gray-200;
+
+                .sv_member {
+                    color: $gray-200;
+                }
+            }
+        }
+
+        .btn-outline-danger {
+            border-color: $gray-300;
+        }
+    }
+
+    .comment-form {
+        label {
+            color: $gray-500;
+        }
+    }
+
+    /* 글쓰기 */
+    .board-write-wrap {
+        background-color: $gray-700;
+        color: $gray-500;
+
+        .write-title {
+            border-color: $gray-600;
+        }
+    }
+
+    .table {
+        tbody {
+            td {
+                color: $gray-200;
+
+                a {
+                    color: $gray-200;
+                }
+            }
+        }
+    }
+
+    /* 페이지 타이틀 */
+    .page-title {
+        color: $gray-300;
+    }
+
+    /* 테이블 */
+    .table-bordered th,
+    .table-bordered td {
+        border: 1px solid $gray-600;
+    }
+
+    /* 쪽지 */
+    .memo {
+        .nav-link {
+            color: $gray-300;
+        }
+    }
+
+    /* 로그인 */
+    .login-wrap {
+        .member-login-box {
+            background-color: $gray-700;
+        }
+    }
+
+    /* 회원가입 */
+    .register-wrap {
+        .title {
+            border-color: $gray-600;
+            color: $gray-400;
+        }
+
+        .login-sns.sns-wrap-32 {
+            background-color: $dark-bg-color;
+            border-color: $gray-700;
+        }
+
+        #fregister_term,
+        #fregister_private {
+            background-color: $dark-bg-color;
+            border-color: $gray-700;
+        }
+    }
+
+    /* 회원가입 2단계 */
+    .register-form-wrap {
+        .title {
+            border-color: $gray-600;
+            color: $gray-400;
+        }
+
+        .reg-group {
+            background-color: $dark-bg-color;
+            border-color: $gray-700;
+        }
+
+        section {
+            background-color: $dark-bg-color;
+            border-color: $gray-700;
+
+            .form-group {
+                background-color: $dark-bg-color;
+                border-color: $gray-700;
+            }
+        }
+
+        .btn-outline-primary {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+
+    /* alert info */
+    .alert-info {
+        background-color: $gray-900;
+        color: $gray-100;
+        font-size: .875rem;
+        border-color: $gray-700;
+    }
+
+    /* SNS login */
+    .sns-login-wrap {
+        background-color: $dark-bg-color;
+        border-color: $gray-700;
+
+        .email_msg {
+            padding: .25rem;
+            color: $gray-400;
+            background-color: $gray-900;
+        }
+
+        .mbskin .toggle .toggle-inner {
+            background-color: $gray-900;
+            border-color: $gray-700;
+        }
+
+        .mbskin .sns_tbl {
+            background-color: $dark-bg-color;
+        }
+    }
+
+    /* 회원 비밀번호 확인 */
+    .member-confirm-box {
+        .title {
+            border-color: $gray-600;
+            color: $gray-400;
+        }
+
+        background-color: $dark-bg-color;
+    }
+
+    /* 자기소개 */
+    .profile-wrap {
+        color: $gray-200;
+
+        .page-title {
+            .sv_member {
+                color: $gray-400;
+            }
+        }
+
+        .table {
+            th {
+                color: $gray-200;
+            }
+        }
+
+        .title {
+            border-color: $gray-600;
+            color: $gray-400;
+        }
+    }
+
+    /* default 모바일 메뉴 */
+    .mobile-menu-wrap,
+    .mobile-member-wrap {
+        background-color: $body-bg;
+
+        .mobile-menu-header {
+            border-color: $border-color;
+            background-color: $dark-bg-color;
+        }
+    }
+
+    /* outlogin */
+    .outlogin-basic-wrap,
+    .outlogin-mobile-basic-wrap {
+        .mb-items {
+            background-color: $gray-600;
+        }
+    }
+
+    /* mypage */
+    .mypage-wrap {
+        .card {
+            background-color: $gray-700;
+        }
+
+        .table {
+            th {
+                color: $gray-100;
+            }
+        }
+    }
+
+    .card.bg-light {
+        color: $gray-800;
+        border-color: $gray-500;
+
+        a {
+            color: $gray-800;
+        }
+
+        .card-header {
+            border-color: $gray-500;
+        }
+    }
+
+    .breadcrumb {
+        color: $gray-200;
+
+        .breadcrumb-item.active {
+            color: $gray-200;
+        }
+    }
+}

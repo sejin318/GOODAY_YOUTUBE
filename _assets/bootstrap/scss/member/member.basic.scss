@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import "../mixins";
+@import "../functions";
+@import "../variables";
+
+$member-max-width : 800px;
+$member-nohead-width :$member-max-width / 2;
+$single-box-width : 500px;
+/*
+####################
+# 회원스킨 CSS 시작
+####################
+*/
+
+/* 회원로그인 */
+.login-wrap,
+.member-nohead-wrap {
+    padding-top: 3rem;
+
+    @include media-breakpoint-up(sm) {
+        padding-top: 5rem;
+    }
+
+    .member-login-box,
+    .member-confirm-box {
+        background-color: $white;
+        width: 90%;
+        margin: 0 auto;
+
+        @include media-breakpoint-up(sm) {
+            width: $member-nohead-width;
+        }
+
+        .login-title {
+            font-weight: 600;
+            text-align: center;
+            padding: .5rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    /* sns */
+    .login-sns {
+        h3 {
+            font-size: 1rem;
+            border-bottom: 1px solid $gray-200;
+        }
+
+        .txt {
+            i {
+                display: none;
+            }
+        }
+    }
+}
+
+/* 회원가입 */
+.register-wrap {
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+        max-width: $member-max-width;
+    }
+
+    .term-text {
+        height: 120px;
+        font-size: .75rem;
+    }
+
+    section {
+        border: 1px solid $gray-200;
+        padding: 1rem;
+        background-color: $white;
+        margin-bottom: 2rem;
+    }
+
+    h1.title {
+        border-bottom: 1px solid $gray-300;
+        padding: .5rem 0;
+    }
+}
+
+/* 회원가입 - 정보입력*/
+.register-form-wrap {
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+        max-width: $member-max-width;
+    }
+
+    section {
+        border: 1px solid $gray-200;
+        padding: 1rem;
+        background-color: $white;
+        margin-bottom: 2rem;
+    }
+
+    h1.title {
+        border-bottom: 1px solid $gray-300;
+        padding: .5rem 0;
+    }
+
+    .form-group.form-check {
+        margin-bottom: 0;
+    }
+
+    .sns-login {}
+}
+
+#daum_juso_pagemb_zip {
+    top: 15px;
+}
+
+/* 회원가입 완료 */
+.register-result-wrap {
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+        max-width: $member-max-width;
+    }
+}
+
+/* 쪽지스킨 */
+
+//Title
+.page-title {
+    border-bottom: 1px solid $gray-400;
+    display: block;
+    position: relative;
+
+    .page-count-info {
+        bottom: 5px;
+        right: 5px;
+        font-size: .875rem;
+        display: block;
+        position: absolute;
+    }
+}
+
+.memo-wrap {
+    .memo {
+        .nav-link.active {
+            background-color: $gray-700;
+            color: $white;
+        }
+    }
+
+    .memo-contents {
+        clear: both;
+        padding: 2rem 0;
+
+        .btn-memo {
+            .badge {
+                font-size: .875rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+
+
+}
+
+/* 비밀번호 확인*/
+.password-form {
+    h1 {
+        display: block;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        max-width: $single-box-width;
+    }
+}
+
+/* 포인트내역 */
+.table-wrap {
+    caption {
+        caption-side: top;
+        text-align: right;
+    }
+}
+
+/* 폼메일 */
+.formmail-wrap {}
+
+/*
+####################
+# 회원스킨 CSS 끝
+####################
+*/

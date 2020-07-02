@@ -1,0 +1,6 @@
+.popular-wrap .swiper-slide { width: auto; }
+.popular-wrap .popular-list { width: auto; overflow: hidden; }
+.popular-wrap .popular-list .pop-link { margin: 0; padding: 0; list-style: none; overflow: hidden; }
+.popular-wrap .popular-list .pop-link li { float: left; display: block; }
+
+/*# sourceMappingURL=popular.basic.css.map */

@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+.comment-wrap {
+    h2 {
+        @include sr-only;
+    }
+
+    .comment-box {
+        background-color: $gray-200;
+    }
+
+    .profile-wrap {
+        @include clearfix;
+        background-color: $gray-100;
+        border: 1px solid $gray-200;
+        padding-bottom: .5rem;
+
+        @include media-breakpoint-up(md) {
+            padding-bottom: 0;
+
+        }
+
+        .profile-img {
+            display: inline-block;
+        }
+
+        .comments-header {
+            margin-left: 5px;
+        }
+
+        .btn-toolbar {
+            margin-top: 5px;
+            margin-right: 5px;
+
+            @include media-breakpoint-up(md) {
+                margin-top: 14px;
+                margin-right: 14px;
+            }
+        }
+    }
+
+    .wr-info {
+        display: inline-block;
+        height: auto;
+        line-height: 100%;
+        padding-top: .5rem;
+
+        @include media-breakpoint-up(md) {
+            padding-top: 0;
+            height: 60px;
+            line-height: 60px;
+        }
+    }
+
+    .member-memo-comment {
+        font-weight: 400;
+        font-size: .75rem;
+    }
+
+    .cmt_contents {
+        padding: 1rem;
+        min-height: 100px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .form-wrap {
+        display: block;
+        padding: .75rem;
+    }
+
+    .comment-empty {
+        text-align: center;
+        color: $gray-400;
+        padding: 2rem;
+        background-color: $gray-100;
+    }
+}
+
+.comment-form {
+    padding: 0;
+
+    h2 {
+        @include sr-only;
+    }
+}
+
+#wr_content {
+    min-height: 180px;
+}
+
+.image-preview-wrap {
+    .comment-image-preview {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 180px;
+    }
+
+    .delete-item {
+        width: 31px;
+        height: 31px;
+        position: absolute;
+        right: .5rem;
+        top: .5rem;
+        z-index: 2;
+    }
+
+    .insert-item {
+        width: 31px;
+        height: 31px;
+        position: absolute;
+        right: .5rem;
+        top: 2.5rem;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,26 @@
+/*
+Card list pro
+*/
+.board-cardpro-list-wrap .board-image-wrap { position: relative; margin: 0; }
+.board-cardpro-list-wrap .board-image-wrap .board-checkbox { left: 1px; top: -1px; z-index: 2; }
+.board-cardpro-list-wrap .board-image-wrap .list-image-link { display: block; overflow: hidden; }
+.board-cardpro-list-wrap .board-image-wrap .list-image-link .list-image { width: 100%; height: auto; -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.board-cardpro-list-wrap .board-image-wrap .list-image-link .list-image:hover { -moz-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2); z-index: 1; }
+.board-cardpro-list-wrap .board-image-wrap .category-wrap { left: 1rem; top: 1rem; background-color: rgba(0, 0, 0, 0.35); padding: .25rem .5rem; border-radius: .125rem; }
+.board-cardpro-list-wrap .board-image-wrap .category-wrap:hover { background-color: rgba(40, 167, 69, 0.35); }
+.board-cardpro-list-wrap .board-image-wrap .category-wrap .board-category-link { color: #fff; font-size: .875rem; font-weight: 600; }
+.board-cardpro-list-wrap .board-image-wrap .scrap-wrap { right: 1rem; top: 1rem; background-color: rgba(0, 0, 0, 0.35); padding: .125rem .5rem; border-radius: .125rem; }
+.board-cardpro-list-wrap .board-image-wrap .scrap-wrap:hover { background-color: rgba(255, 193, 7, 0.35); }
+.board-cardpro-list-wrap .board-image-wrap .scrap-wrap:hover .scrap-this-item { color: #343a40; }
+.board-cardpro-list-wrap .board-image-wrap .scrap-wrap .scrap-this-item { color: #fff; font-size: 1.25rem; font-weight: 600; }
+.board-cardpro-list-wrap .board-image-wrap .scrap-wrap .scrap-this-item.scraped { color: #007bff; }
+.board-cardpro-list-wrap .board-image-wrap .list-icons-wrap { left: 5px; bottom: 5px; }
+.board-cardpro-list-wrap .board-image-wrap .list-icons-wrap .badge { height: 17px; }
+.board-cardpro-list-wrap .board-image-wrap .list-good-wrap { right: 5px; bottom: 5px; }
+.board-cardpro-list-wrap .board-image-wrap .list-good-wrap .badge { height: 17px; }
+.board-cardpro-list-wrap .board-contents-wrap { padding: 1.75rem 1.5rem; }
+.board-cardpro-list-wrap .board-contents-wrap .card-title { font-weight: 600; font-size: 1.125rem; }
+.board-cardpro-list-wrap .board-contents-wrap .card-text { line-height: 200%; }
+.board-cardpro-list-wrap .card-footer .text-datetime { right: 13px; top: 13px; color: #adb5bd; }
+
+/*# sourceMappingURL=board.card_pro.css.map */

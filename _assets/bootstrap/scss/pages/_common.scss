@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/* page common */
+.contents-section {
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    .contents-section-header {
+        position: relative;
+        text-align: center;
+
+        .contents-section-title {
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 2rem 0;
+
+
+
+            @include media-breakpoint-up(md) {
+                font-size: 3rem;
+                padding: 4rem 0;
+            }
+
+            &::after {
+                content: '';
+                display: flex;
+                border-bottom: 4px solid rgba($color: $primary, $alpha: .5);
+                width: 30%;
+                padding-top: .5rem;
+                margin: 0 auto;
+
+                @include media-breakpoint-up(md) {
+                    padding-top: 1rem;
+                }
+            }
+
+        }
+    }
+
+    .contents-section-body {
+        .body-title {
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: 1rem 0;
+            margin-top: 1rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.5rem;
+                padding: 1rem 0;
+            }
+
+            &::after {
+                content: '';
+                display: flex;
+                border-bottom: 2px solid rgba($color: $success, $alpha: .5);
+                padding-top: .25rem;
+                margin: 0;
+
+                @include media-breakpoint-up(md) {
+                    padding-top: .5rem;
+                }
+            }
+        }
+    }
+}
+
+/* 페이지 분할표시 */
+.divider {
+    width: 150px;
+    height: 3px;
+    background-color: $gray-400;
+    display: block;
+    margin: 5rem auto;
+
+    em {
+        width: 60px;
+        height: 3px;
+        display: block;
+        margin: auto;
+    }
+}
+
+.divider.primary {
+    em {
+        background-color: $primary;
+    }
+}
+
+.divider.dark {
+    em {
+        background-color: $dark;
+    }
+}
+
+.divider.secondary {
+    em {
+        background-color: $secondary;
+    }
+}
+
+.divider.danger {
+    em {
+        background-color: $danger;
+    }
+}
+
+.divider.warning {
+    em {
+        background-color: $warning;
+    }
+}
+
+.divider.success {
+    em {
+        background-color: $success;
+    }
+}
+
+.divider.info {
+    em {
+        background-color: $info;
+    }
+}
+
+.divider.light {
+    em {
+        background-color: $light;
+    }
+}
+
+.divider.white {
+    em {
+        background-color: $white;
+    }
+}

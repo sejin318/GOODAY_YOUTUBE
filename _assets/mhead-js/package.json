@@ -1,0 +1,63 @@
+{
+  "_from": "mhead-js",
+  "_id": "mhead-js@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-gYYE6/IqgKejg4Bg1Mg/iqum8ukQBbYU8iVVnHOYWiFg/5ZDUvtBPxZm7G+ZhPuFWVAmxd7Ez2tKZMAaje0VKg==",
+  "_location": "/mhead-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "mhead-js",
+    "name": "mhead-js",
+    "escapedName": "mhead-js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mhead-js/-/mhead-js-2.0.0.tgz",
+  "_shasum": "7421c89388bb6708fc93910ad27eebcf0ab53305",
+  "_spec": "mhead-js",
+  "_where": "G:\\iwinv-boilerplate.kr",
+  "author": {
+    "name": "Fred Heusschen",
+    "email": "info@frebsite.nl"
+  },
+  "bugs": {
+    "url": "https://github.com/FrDH/jQuery.mhead/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A small framework for creating a beautiful mobile navigation header to accompany the mmenu.js menu on your website and webapp.",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-typescript": "^5.0.1",
+    "typescript": "^3.4.4",
+    "webpack-stream": "^5.2.1"
+  },
+  "homepage": "https://github.com/FrDH/jQuery.mhead#readme",
+  "keywords": [
+    "app",
+    "mobile",
+    "navigation",
+    "head",
+    "header",
+    "navbar"
+  ],
+  "license": "CC-BY-NC-4.0",
+  "main": "dist/mhead.js",
+  "module": "src/mhead.js",
+  "name": "mhead-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrDH/jQuery.mhead.git"
+  },
+  "version": "2.0.0"
+}

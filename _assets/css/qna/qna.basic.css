@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* 1:1 게시판 목록 */
+.qa-wrap .table .td_num, .qa-wrap .table .td_name, .qa-wrap .table .td_date, .qa-wrap .table .td_stat { white-space: nowrap; }
+.qa-wrap .table .td_name, .qa-wrap .table .td_date, .qa-wrap .table .td_stat { display: none; }
+@media (min-width: 576px) { .qa-wrap .table .td_name, .qa-wrap .table .td_date, .qa-wrap .table .td_stat { display: table-cell; } }
+.qa-wrap .table .wr-info { font-size: .875rem; text-align: right; }
+.qa-wrap .table .bo_cate_link { font-weight: 600; color: #007bff; }
+
+/* qa 내용보기 */
+.qa-view-wrap .page-title .bo_v_cate { color: #007bff; }
+.qa-view-wrap .qa-content-wrap .qa-content { min-height: 200px; }
+.qa-view-wrap .bo_cate_link { color: #007bff; }
+.qa-view-wrap .table th, .qa-view-wrap .table td { white-space: nowrap; }
+
+/*# sourceMappingURL=qna.basic.css.map */
