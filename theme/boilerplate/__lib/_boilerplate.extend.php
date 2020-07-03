@@ -174,7 +174,7 @@ if (!function_exists('bp_logo_view')) {
         //테마 기본설정에 로고 이미지가 있다면 출력
         $default_logo = "<a href='/' class='site-logo-link navbar-brand'><img src='" . BP_ASSETS_URL . "/img/logo4.png' class='Boilerplate.kr site-logo'></a>";
         if ($config['bp_logo']) {
-            $default_logo = "<a href='/' class='site-logo-link navbar-brand'><img src='" . BP_FILE_URL . "/{$config['bp_logo']}' class='site-logo'></a>";
+            $default_logo = "<a href='/' class='site-logo-link navbar-brand'><img src='" . BP_FILE_URL . "/{$config['bp_logo']}' class='site-logo' width=100% height=100% ></a>";
         }
 
         //기간 중복 랜덤일 경우 처리

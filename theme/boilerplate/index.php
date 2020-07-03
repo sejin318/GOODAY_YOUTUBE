@@ -30,14 +30,13 @@ add_stylesheet('<link rel="stylesheet" href="' . BP_ASSETS_URL . '/css/bp_pages.
 
 
 <div class="latest-list row">
-    <div class='col-sm-12 col-md-6'>
+    <div class='col-sm-12 col-md-12'>
         <div class='tab-skin-wrap latst-no-title latest-simple'>
-            <?php echo bp_tab_latest('theme/basic', 'cssbootstrap,gnuboard,etc,qna', 5, 33); ?>
-        </div>
-    </div>
-    <div class='col-sm-12 col-md-6'>
-        <div class='tab-skin-wrap latst-no-title latest-simple'>
-            <?php echo bp_tab_latest('theme/basic', 'free,gallery,theme_skin', 5, 33); ?>
+            <?php 
+            echo bp_tab_latest('theme/basic', 'entertainment,animal,tech_science', 5, 33); 
+            echo '</br>'; 
+            echo bp_tab_latest('theme/basic', 'entertainment,animal,tech_science', 5, 33); 
+            ?>
         </div>
     </div>
 </div>

@@ -52,7 +52,9 @@ include_once(G5_PATH.'/head.php');
     $sql .= " and a.bo_table not in ('notice', 'gallery') ";     //공지사항과 갤러리 게시판은 제외
     $sql .= " order by b.gr_order, a.bo_order ";
     $result = sql_query($sql);
-    for ($i=0; $row=sql_fetch_array($result); $i++) {
+    $table_list = ["entertainment", "animal", "tech_science"];  // added
+    for ($i=0; $row=sql_fetch_array($result); $i < count($table_list); $i++) {
+//    for ($i=0; $row=sql_fetch_array($result); $i++) {
 		$lt_style = '';
     	if ($i%3 !== 0 ) $lt_style = "margin-left:2%";
     ?>
@@ -61,7 +63,8 @@ include_once(G5_PATH.'/head.php');
         // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
         // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
         // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
-        echo latest('basic', $row['bo_table'], 6, 24);
+//        echo latest('basic', $row['bo_table'], 6, 24);
+        echo latest('basic', $table_list[$i], 6, 24);
         ?>
     </div>
     <?php
