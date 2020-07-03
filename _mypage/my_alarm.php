@@ -68,7 +68,19 @@ $result = sql_query($sql, true);
                             <?php if (($rows['ba_type'] == 'comment' || $rows['ba_type'] == 'reply') && $rows['ba_bo_table'] && $rows['ba_wr_id']) { ?>
                                 <!-- 댓글 -->
                                 <?php echo $rows['ba_bo_subject'] != '' ? "<a href='" . G5_PLUGIN_URL . DIRECTORY_SEPARATOR . "ask-alarm/alarm_link.php?ba_idx={$rows['ba_idx']}'  class='text-link'>[" . $rows['ba_bo_subject'] . "] " : ""; ?>
-                                <?php echo $rows['ba_wr_subject'] != '' ? cut_str($rows['ba_wr_subject'], 20) . ' </a> 게시물에 댓글을 남겼습니다.' : ""; ?>
+                                <?php 
+
+				$board_name = $rows['ba_bo_table']; 
+				$reply_id = $rows['ba_wr_id']; 
+				$qqq = "SELECT wr_comment_reply FROM `g5_write_{$board_name}` WHERE wr_id = {$reply_id}"; 
+                $qqq = sql_query($qqq, true);
+                $qqq = sql_fetch_array($qqq)["wr_comment_reply"];
+                $post_or_comment = "게시물"; 
+				if(strlen($qqq) > 0){
+					$post_or_comment = "댓글"; 
+				}
+				echo $rows['ba_wr_subject'] != '' ? cut_str($rows['ba_wr_subject'], 20) . " </a> {$post_or_comment}에 댓글을 남겼습니다." : ""; 
+				?>
                             <?php } ?>
                             <?php if ($rows['ba_type'] == 'qna') { ?>
                                 <!-- 1:1문의-->
