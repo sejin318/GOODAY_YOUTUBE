@@ -9,7 +9,8 @@ function latest($skin_dir='', $bo_table, $rows=10, $subject_len=40, $cache_time=
     global $g5;
 
     if (!$skin_dir) $skin_dir = 'basic';
-
+    
+    
     if(preg_match('#^theme/(.+)$#', $skin_dir, $match)) {
         if (G5_IS_MOBILE) {
             $latest_skin_path = G5_THEME_MOBILE_PATH.'/'.G5_SKIN_DIR.'/latest/'.$match[1];
@@ -33,14 +34,14 @@ function latest($skin_dir='', $bo_table, $rows=10, $subject_len=40, $cache_time=
 
     $caches = false;
 
-    if(G5_USE_CACHE) {
+    if(false) {
         $cache_file_name = "latest-{$bo_table}-{$skin_dir}-{$rows}-{$subject_len}-".g5_cache_secret_key();
         $caches = g5_get_cache($cache_file_name);
         $cache_list = isset($caches['list']) ? $caches['list'] : array();
         g5_latest_cache_data($bo_table, $cache_list);
     }
 
-    if( $caches === false ){
+    if( true ){
 
         $list = array();
 
@@ -83,7 +84,7 @@ function latest($skin_dir='', $bo_table, $rows=10, $subject_len=40, $cache_time=
         }
         g5_latest_cache_data($bo_table, $list);
 
-        if(G5_USE_CACHE) {
+        if(false) {
 
             $caches = array(
                 'list' => $list,

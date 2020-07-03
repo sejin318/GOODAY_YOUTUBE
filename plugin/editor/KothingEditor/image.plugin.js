@@ -6,6 +6,7 @@ for(var i = 0; i < eidx;i++){
 }
 // Edit image list
 function setImageList (ele, arridx) {
+    console.log("hello 1"); 
     var imageTable = $('#' + ele).find('.image_list')[0];
     var imageRemove = $('#' + ele).find('.image_remove')[0];
     var imageSize = $('#' + ele).find('.image_size')[0];
@@ -31,6 +32,7 @@ function setImageList (ele, arridx) {
 
 // Array.prototype.findIndex
 function findIndex(arr, index) {
+    console.log("hello 2"); 
     var idx = -1;
 
     arr.some(function (a, i) {
@@ -46,12 +48,14 @@ function findIndex(arr, index) {
 
 // Click the file size
 function selectImage (type, index, arrIdx) {
+    console.log("hello 3"); 
     console.log(type, index, arrIdx);
     //imageList[findIndex(imageList, index)][type]();
 }
 
 // Image check
 function checkImage (ele, index, arrIdx) {
+    console.log("hello 4"); 
     var imageTable = $('#' + ele).find('.image_list')[0];
     var imageRemove = $('#' + ele).find('.image_remove')[0];
     var imageSize = $('#' + ele).find('.image_size')[0];
@@ -76,6 +80,7 @@ function checkImage (ele, index, arrIdx) {
 
 // Click the remove button
 function deleteCheckedImages(editor, ele) {
+    console.log("hello 5"); 
     var arrIdx = parseInt($('#'+ele).data('idx'));
     var imageTable = $('#' + ele).find('.image_list')[0];
     var imageRemove = $('#' + ele).find('.image_remove')[0];
@@ -110,6 +115,7 @@ function check_base64_image($base64) {
     return false;
 }
 function dataURLtoFile(dataurl, filename) {
+    console.log("hello 6"); 
     var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
         bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
     while(n--){
@@ -122,6 +128,7 @@ function checkUrlForm(strUrl) {
     return expUrl.test(strUrl);
 }
 function Keditor_image(targetImgElement, imageInfo){
+    console.log("hello 7"); 
     var formData = new FormData(); // Currently empty
     if(checkUrlForm(imageInfo.src)){
         return false;
