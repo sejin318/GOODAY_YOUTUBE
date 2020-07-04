@@ -17,18 +17,25 @@
 /* # sourceMappingURL=slider.css.map */
 
 .main_slider .slider-default-wrap .carousel-caption h5 { font-family: "Noto Sans KR", sans-serif; font-weight: 800; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.75); font-size: calc(1.5vw + 0.5rem); } /* addition */
-.main_slider .slider-default-wrap .carousel-caption p { font-family: "Noto Sans KR", sans-serif; font-weight: 500; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.75); font-size: calc(1vw + 0.5rem); } /* addition */
+.main_slider .slider-default-wrap .carousel-caption p { bottom: 100px !important; color: white !important; font-family: "Noto Sans KR", sans-serif; font-weight: 500; text-shadow: 2px 2px 2px rgba(52, 58, 64, 0.75); font-size: calc(1vw + 0.5rem); } /* addition */
 
 .w-slider {
+    
   width: 100% !important;
-  max-width: 900px !important;
+/*  max-width: 900px !important;*/
 }
 
+.main_slider .carousel-caption-media { top: 40%; }
+div.carousel-item.carousel-item-num2.font-light.active div p a {
+    color: white; 
+}
 
+/*
 @media (max-width: 3000px) { .main_slider .carousel-caption-media { bottom: calc(70% - 90px) !important; } }
 @media (max-width: 767px) { .main_slider .carousel-caption-media { bottom: calc(50% - 70px) !important; }}
 @media (min-width: 1280px) { .main_slider .slider-default-wrap .carousel-caption h5 { font-size: calc(1.7rem); }}
 @media (min-width: 1280px) { .main_slider .slider-default-wrap .carousel-caption p { font-size: calc(1.3rem); }}
+*/
 /* @media (max-width: 1100px) { .carousel-caption-media { bottom: -20px !important; } }
 @media (max-width: 1000px) { .carousel-caption-media { bottom: -40px !important; } }
 @media (max-width: 800px) { .carousel-caption-media { bottom: -60px !important; } }

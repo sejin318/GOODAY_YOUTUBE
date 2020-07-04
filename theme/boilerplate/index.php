@@ -23,9 +23,14 @@ add_stylesheet('<link rel="stylesheet" href="' . BP_ASSETS_URL . '/css/bp_pages.
   # 슬라이더 스킨은 theme/boilerplate/_slider/폴더명 입니다.
   # 생략하면 슬라이더 관리자에서 지정한 스킨이 사용됩니다.
   ####################################################################################################
-  run_event('금주의 유튜버', '금주의 유튜버');
+  run_event('메인 배너', '메인 배너');
   // echo bp_tag_banner('베너');
 ?>
+
+    </br>
+    </br>
+    </br>
+
 </div>
 
 

@@ -94,9 +94,9 @@ function deleteCheckedImages(editor, ele) {
             i--;
         }
     }
-
     selectedImages[arrIdx] = [];
 }
+
 function check_base64_image($base64) {
     $img = imagecreatefromstring(base64_decode($base64));
     if (!$img) {
@@ -114,6 +114,7 @@ function check_base64_image($base64) {
 
     return false;
 }
+
 function dataURLtoFile(dataurl, filename) {
     console.log("hello 6"); 
     var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
@@ -146,6 +147,7 @@ function Keditor_image(targetImgElement, imageInfo){
         processData : false, 
         dataType : "json", 
         success: function (data) {
+            console.log("image upload successful!");
             if(data.msg) alert(data.msg);    
             if(data.src){
                 targetImgElement.src = data.src;
