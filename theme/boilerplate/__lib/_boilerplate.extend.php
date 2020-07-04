@@ -174,17 +174,17 @@ if (!function_exists('bp_logo_view')) {
         //테마 기본설정에 로고 이미지가 있다면 출력
         $default_logo = "<a href='/' class='site-logo-link navbar-brand'><img src='" . BP_ASSETS_URL . "/img/logo4.png' class='Boilerplate.kr site-logo'></a>";
         if ($config['bp_logo']) {
-            $default_logo = "<a href='/' class='site-logo-link navbar-brand'><img src='" . BP_FILE_URL . "/{$config['bp_logo']}' class='site-logo' width=100% height=100% ></a>";
+            $default_logo = "<a href='/' class='site-logo-link navbar-brand'><img src='" . BP_FILE_URL . "/{$config['bp_logo']}' class='site-logo the-logo' width=100% height=100% ></a>";
         }
 
         //기간 중복 랜덤일 경우 처리
 
         //기간 지정 로고 있을 경우
-        $sql = "SELECT * from `" . BP_LOGO_TABLE . "` where  (date_format(now(), '%Y-%m-%d') BETWEEN `lm_startday` and `lm_endday`) order by lm_order limit 1";
-        $logo = sql_fetch($sql);
-        if ($logo) {
-            $default_logo = "<a href='{$logo['lm_link']}' class='site-logo-link navbar-brand'><img src='" . BP_FILE_URL . "/{$logo['lm_file']}' class='site-logo' alt='{$logo['lm_alt']}'></a>";
-        }
+//        $sql = "SELECT * from `" . BP_LOGO_TABLE . "` where  (date_format(now(), '%Y-%m-%d') BETWEEN `lm_startday` and `lm_endday`) order by lm_order limit 1";
+//        $logo = sql_fetch($sql);
+//        if ($logo) {
+//            $default_logo = "<a href='{$logo['lm_link']}' class='site-logo-link navbar-brand'><img src='" . BP_FILE_URL . "/{$logo['lm_file']}' class='site-logo' alt='{$logo['lm_alt']}'></a>";
+//        }
         return $default_logo;
     }
 }

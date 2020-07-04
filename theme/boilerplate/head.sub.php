@@ -68,7 +68,7 @@ if ($is_member) {
 -->
     
 <!--    <link rel="apple-touch-icon" sizes="60x60" href="/_assets/favicon/dog.png">-->
-    <link rel="shortcut icon" href="/_assets/favicon/dog.ico" type="image/x-ico" />
+    <link rel="shortcut icon" href="/_assets/favicon/gooday_logo.ico" type="image/x-ico" />
 
     <title><?php echo $g5_head_title; ?></title>
     <?php

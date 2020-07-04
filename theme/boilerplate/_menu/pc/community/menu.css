@@ -117,4 +117,14 @@ body.colorset-dark .community-pc-menu-wrap .search-widget-wrap .popular-wrap .bt
 .community-pc-menu-wrap nav.mobile-bg-white { z-index: 2000;  background-color: #fff; }
 .community-pc-menu-wrap nav.mobile-bg-white .navbar-toggler { z-index: 2000;  color: #343a40; }
 
+@media (max-width: 1000px) { 
+    .the-logo {
+     content:url("http://www.goodayoutube.com/data/bp_file/bp_logo_1593876417d74209ff301aff39200fe16ca77e8189.png");
+    }
+}
+
+.the-image-logo { background-image: url(http://bp_logo_1593876441bb3959bc28d280d3dfdc7f11f58eda9a.png); }
+@media (max-width: 1200px) {.the-image-logo { background-image: url(http://www.goodayoutube.com/data/bp_file/bp_logo_1593876417d74209ff301aff39200fe16ca77e8189.png); }}
 /*# sourceMappingURL=menu.css.map */
+
+
