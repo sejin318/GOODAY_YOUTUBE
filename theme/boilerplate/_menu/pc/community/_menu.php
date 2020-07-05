@@ -26,7 +26,7 @@ add_stylesheet('<link rel="stylesheet" href="' . BP_PC_MENU_URL . DIRECTORY_SEPA
     <nav class="nav-wrap d-flex navbar navbar-expand-lg mobile-bg-<?php echo $config['bp_pc_menu_color'] ?>">
         <!-- 모바일용 왼쪽 메뉴 버튼 -->
         <a class="navbar-toggler" data-offcanvas-trigger="left-side-menu" href="#left-side-menu">
-            <i class="fa fa-bars" aria-hidden="true" style="color: black"></i>
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </a>
         <div class='d-lg-none'>
             <!--Mobile LOGO -->

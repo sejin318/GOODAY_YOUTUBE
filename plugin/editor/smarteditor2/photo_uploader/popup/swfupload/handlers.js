@@ -345,7 +345,7 @@ function file_to_editor() {
 function insert_editor(html) {
 	try {	
 		ed_wr_content.insertContents(html);
-		/*
+		
 		if (typeof(ed_wr_content) != "undefined") 
 			if (geditor_wr_content.get_mode() == "WYSIWYG") {
 				document.getElementById("geditor_wr_content_frame").contentWindow.document.body.focus();
@@ -360,7 +360,7 @@ function insert_editor(html) {
 		} else {
 			document.getElementById("wr_content").value += html + "\n";
 		}
-			*/
+			
 	} catch (ex) {
 		this.debug(ex);
 	};

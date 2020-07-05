@@ -53,8 +53,8 @@ include_once(G5_PATH.'/head.php');
     $sql .= " order by b.gr_order, a.bo_order ";
     $result = sql_query($sql);
     $table_list = ["entertainment", "animal", "tech_science"];  // added
-    for ($i=0; $row=sql_fetch_array($result); $i < count($table_list); $i++) {
-//    for ($i=0; $row=sql_fetch_array($result); $i++) {
+//    for ($i=0; $row=sql_fetch_array($result); $i < count($table_list); $i++) {
+    for ($i=0; $row=sql_fetch_array($result); $i++) {
 		$lt_style = '';
     	if ($i%3 !== 0 ) $lt_style = "margin-left:2%";
     ?>

@@ -30,6 +30,17 @@ div.carousel-item.carousel-item-num2.font-light.active div p a {
     color: white; 
 }
 
+.carousel-indicators {
+    margin-bottom: 0.3rem; 
+}
+
+@media (max-width: 550px) {
+    .carousel-indicators { 
+        display: none !important;   
+    } 
+}
+
+
 /*
 @media (max-width: 3000px) { .main_slider .carousel-caption-media { bottom: calc(70% - 90px) !important; } }
 @media (max-width: 767px) { .main_slider .carousel-caption-media { bottom: calc(50% - 70px) !important; }}

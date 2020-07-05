@@ -28,6 +28,8 @@ function setImageList (ele, arridx) {
     }
     imageSize.innerText = size.toFixed(1) + 'KB';
     imageTable.innerHTML = list;
+//    imageTable.innerHTML = list.reverse;
+    console.log("IMAGE TABLE: @@@: ", imageTable); 
 }
 
 // Array.prototype.findIndex
@@ -80,10 +82,13 @@ function checkImage (ele, index, arrIdx) {
 
 // Click the remove button
 function deleteCheckedImages(editor, ele) {
+    // find function returns the index 
     console.log("hello 5"); 
     var arrIdx = parseInt($('#'+ele).data('idx'));
     var imageTable = $('#' + ele).find('.image_list')[0];
+    console.log("image table is: ", imageTable.innerHTML); 
     var imageRemove = $('#' + ele).find('.image_remove')[0];
+    console.log("image remove is: ", imageTable.toString()); 
     var imageSize = $('#' + ele).find('.image_size')[0];
     $(imageTable).find('.checked').remove();
     var iamgesInfo = editor.getImagesInfo();

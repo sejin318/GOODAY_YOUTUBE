@@ -6589,6 +6589,15 @@ a.close.disabled {
   list-style: none;
 }
 
+/*
+@media (max-width:1000px){
+    .carousel-indicators {
+        display: none !important;   
+        bottom: 500px; 
+    }
+}
+*/
+
 .carousel-indicators li {
   box-sizing: content-box;
   -ms-flex: 0 1 auto;
