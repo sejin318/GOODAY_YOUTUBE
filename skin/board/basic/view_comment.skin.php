@@ -109,7 +109,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
 ?>
 <!-- 댓글 쓰기 시작 { -->
 <aside id="bo_vc_w" class="bo_vc_w">
-    <h2>댓글쓰기</h2>
+    <h2>댓글쓰기</h2>    
     <form name="fviewcomment" id="fviewcomment" action="<?php echo $comment_action_url; ?>" onsubmit="return fviewcomment_submit(this);" method="post" autocomplete="off">
     <input type="hidden" name="w" value="<?php echo $w ?>" id="w">
     <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
@@ -158,11 +158,13 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
             <?php } ?>
         </div>
         <div class="btn_confirm">
+<!--
         	<span class="secret_cm chk_box">
 	            <input type="checkbox" name="wr_secret" value="secret" id="wr_secret" class="selec_chk">
 	            <label for="wr_secret"><span></span>비밀글</label>
             </span>
-            <button type="submit" id="btn_submit" class="btn_submit">댓글등록</button>
+-->
+            <button type="submit" id="btn_submit" class="btn_submit btn_b03">댓글등록</button>
         </div>
     </div>
     </form>

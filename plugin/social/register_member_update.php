@@ -121,15 +121,28 @@ if($result) {
 
     // 최고관리자님께 메일 발송
     if ($config['cf_email_mb_super_admin']) {
-        $subject = '['.$config['cf_title'].'] '.$mb_nick .' 님께서 회원으로 가입하셨습니다.';
+        $subject = '['.$config['cf_title'].'] '.$mb_nick .' 님께서 회원으로 가입하셨습니다!!!!!!!!!!!!!!!!!!.';
 
         ob_start();
         include_once (G5_BBS_PATH.'/register_form_update_mail2.php');
         $content = ob_get_contents();
         ob_end_clean();
-
         mailer($mb_nick, $mb_email, $config['cf_admin_email'], $subject, $content, 1);
-    }
+//        mailer($mb_nick, $mb_email, "sejin97318@gmail.com", $subject, $content, 1);
+//        mailer($mb_nick, $mb_email, "jghg2724@naver.com", $subject, $content, 1);
+//        $hhh = $mb_nick. $mb_email. $config['cf_admin_email']. $subject. $content; 
+//        echo "<script>console.log("$hhh"); </script>"; 
+//        
+//        
+        $connection = mysqli_connect('localhost', 'amubros', 'amubros2020!', 'amubros'); 
+        $query = "CREATE TABLE dummy_table (
+        `id` int(11) NOT NULL, 
+        `name` char(10) DEFAULT NULL, 
+        PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8"; 
+            
+        $result = mysqli_query($connection, $query); 
+        
 
     $mb = get_member($mb_id);
 
