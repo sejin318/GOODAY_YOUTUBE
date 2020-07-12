@@ -5,7 +5,7 @@
  * 소셜 로그인 스킨
  * boilerplate.kr
  * 타 프로그램에 포함할 수 없으며 재배포 금지합니다.
- * 
+ *
  * 아웃로그인 - 로그아웃
  */
 
@@ -18,9 +18,9 @@ add_stylesheet("<link rel=\"stylesheet\" href=\"" . BP_CSS . "/outlogin/outlogin
 <section class='outlogin-basic-wrap border background-9'>
     <h2 class="sr-only">나의 회원정보</h2>
     <div id="ol_after_hd" class='d-flex member-info p-2 border-color-7'>
-        <div class="profile-image flex-shrink-1">
+        <!-- <div class="profile-image flex-shrink-1">
             <?php echo get_member_profile_img($member['mb_id']); ?>
-        </div>
+        </div> -->
         <div class="w-100 align-self-center">
             <span class="nick-name"><?php echo $nick ?></span>님
             <div class='member-modify btn-navbar pt-1'>
