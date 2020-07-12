@@ -45,7 +45,7 @@ if ($board['bb_use_font']) {
     <section class='bv-info mb-5'>
         <h2 class='sr-only'>페이지 정보</h2>
         <div class="profile-info d-flex mb-2">
-            <div class="profile-img mr-1"><?php echo get_member_profile_img($view['mb_id']) ?></div>
+            <!-- <div class="profile-img mr-1"><?php echo get_member_profile_img($view['mb_id']) ?></div> -->
             <div class="profile-comment text-break">
                 <span class="sr-only">작성자</span>
                 <?php echo $view['name'] ?>
@@ -219,7 +219,7 @@ if ($board['bb_use_font']) {
                 ?>
             </div>
         <?php } ?>
-        <?php //echo $view['rich_content']; // {이미지:0} 과 같은 코드를 사용할 경우 
+        <?php //echo $view['rich_content']; // {이미지:0} 과 같은 코드를 사용할 경우
         ?>
         <!-- } 본문 내용 끝 -->
 

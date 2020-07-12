@@ -32,9 +32,9 @@ if (!defined('_GNUBOARD_')) {
 
         <article class='comment-box mb-2' id="c_<?php echo $comment_id ?>" <?php if ($cmt_depth) { ?> style="margin-left:<?php echo $cmt_depth ?>px;border-top-color:#e0e0e0" <?php } ?>>
             <div class="profile-wrap">
-                <div class="profile-img pull-left d-none d-md-block">
+                <!-- <div class="profile-img pull-left d-none d-md-block">
                     <?php echo get_member_profile_img($list[$i]['mb_id']); ?>
-                </div>
+                </div> -->
                 <header class='comments-header pull-left' style="z-index:<?php echo $cmt_sv; ?>">
                     <h2><?php echo get_text($list[$i]['wr_name']); ?>님의 <?php if ($cmt_depth) { ?><span class="sr-only">댓글의</span><?php } ?> 댓글</h2>
                     <div class='wr-info'>
@@ -106,7 +106,7 @@ if (!defined('_GNUBOARD_')) {
 
         </article>
     <?php } ?>
-    <?php if ($i == 0) { //댓글이 없다면 
+    <?php if ($i == 0) { //댓글이 없다면
     ?><div class='comment-empty'>등록된 댓글이 없습니다.</div><?php } ?>
 
 </section>
