@@ -446,9 +446,11 @@ a.btn.disabled, fieldset:disabled a.btn { pointer-events: none; }
 .btn-dark.disabled, .btn-dark:disabled { color: #fff; background-color: #343a40; border-color: #343a40; }
 .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle { color: #fff; background-color: #1d2124; border-color: #171a1d; }
 .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus { box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5); }
-
-.btn-outline-primary { color: #007bff; border-color: #007bff; }
-.btn-outline-primary:hover { color: #fff; background-color: #007bff; border-color: #007bff; }
+/* 파랑 -> 회색으로 변경 */
+.btn-outline-primary { color: #ccc; border-color: #999; }
+.btn-outline-primary:hover { color: #fff; background-color: #555; border-color: #fff; }
+/* .btn-outline-primary { color: #007bff; border-color: #007bff; }
+.btn-outline-primary:hover { color: #fff; background-color: #007bff; border-color: #007bff; } */
 .btn-outline-primary:focus, .btn-outline-primary.focus { box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
 .btn-outline-primary.disabled, .btn-outline-primary:disabled { color: #007bff; background-color: transparent; }
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle { color: #fff; background-color: #007bff; border-color: #007bff; }
@@ -481,9 +483,11 @@ a.btn.disabled, fieldset:disabled a.btn { pointer-events: none; }
 .btn-outline-warning.disabled, .btn-outline-warning:disabled { color: #ffc107; background-color: transparent; }
 .btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle { color: #212529; background-color: #ffc107; border-color: #ffc107; }
 .btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus { box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5); }
-
-.btn-outline-danger { color: #dc3545; border-color: #dc3545; }
-.btn-outline-danger:hover { color: #fff; background-color: #dc3545; border-color: #dc3545; }
+/* 빨강 -> 회색으로 변경 */
+.btn-outline-danger { color: #ccc; border-color: #999; }
+.btn-outline-danger:hover { color: #fff; background-color: #555; border-color: #fff; }
+/* .btn-outline-danger { color: #dc3545; border-color: #dc3545; }
+.btn-outline-danger:hover { color: #fff; background-color: #dc3545; border-color: #dc3545; } */
 .btn-outline-danger:focus, .btn-outline-danger.focus { box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); }
 .btn-outline-danger.disabled, .btn-outline-danger:disabled { color: #dc3545; background-color: transparent; }
 .btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle { color: #fff; background-color: #dc3545; border-color: #dc3545; }
