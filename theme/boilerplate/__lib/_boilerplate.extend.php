@@ -338,7 +338,23 @@ if (!function_exists('bp_tab_latest')) {
             if ($i == 0) {
                 $active = "active";
             }
-            $tab .= '<li class="nav-item"><a class="nav-link ' . $active . '" id="pills-' . $bo_table . $uniqid . '-tab" data-toggle="pill" href="#pills-' . $bo_table . $uniqid . '" role="tab" aria-controls="pills-' . $bo_table . $uniqid . '" aria-selected="true">' . $board['bo_subject'] . '</a></li>';
+            $tab .=  "<li class='nav-item'><a class='nav-link " 
+                . $active 
+                . "' id='pills-" 
+                . $bo_table 
+                . $uniqid 
+                . "-tab' data-toggle='pill' href='#pills-" 
+                . $bo_table 
+                . $uniqid 
+                . "' subref='http://www.goodayoutube.com/bbs/board.php?bo_table=$bo_table"
+                . "' role='tab' aria-controls='pills-" 
+                . $bo_table 
+                . $uniqid 
+                . "' aria-selected='true'>" 
+                . "<div class='inner-atag' clicked='$active' href='http://www.goodayoutube.com/bbs/board.php?bo_table=$bo_table'>"
+                . $board["bo_subject"] 
+                . "</div>"
+                . "</a></li>";
             $i++;
         }
         $tab .= '</ul>';
