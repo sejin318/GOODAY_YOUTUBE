@@ -27,14 +27,14 @@ add_stylesheet("<link rel=\"stylesheet\" href=\"" . BP_CSS . "/member/member.bas
 		<input type="hidden" name="cert_type" value="<?php echo $member['mb_certify']; ?>">
 		<input type="hidden" name="cert_no" value="">
 		<?php if (isset($member['mb_sex'])) { ?><input type="hidden" name="mb_sex" value="<?php echo $member['mb_sex'] ?>"><?php } ?>
-		<?php if (isset($member['mb_nick_date']) && $member['mb_nick_date'] > date("Y-m-d", G5_SERVER_TIME - ($config['cf_nick_modify'] * 86400))) { // 닉네임수정일이 지나지 않았다면 
+		<?php if (isset($member['mb_nick_date']) && $member['mb_nick_date'] > date("Y-m-d", G5_SERVER_TIME - ($config['cf_nick_modify'] * 86400))) { // 닉네임수정일이 지나지 않았다면
 		?>
 			<input type="hidden" name="mb_nick_default" value="<?php echo get_text($member['mb_nick']) ?>">
 			<input type="hidden" name="mb_nick" value="<?php echo get_text($member['mb_nick']) ?>">
 		<?php } ?>
 
 		<div id="register_form" class="form_01">
-			<!-------------------------	
+			<!-------------------------
 				 아아디, 비밀번호 입력
 			---------------------------->
 			<section class="reg-group">
@@ -52,14 +52,14 @@ add_stylesheet("<link rel=\"stylesheet\" href=\"" . BP_CSS . "/member/member.bas
 				</div>
 			</section>
 
-			<!-------------------------	
-				 이름, 닉네임.... 
+			<!-------------------------
+				 이름, 닉네임....
 			---------------------------->
 			<section class="reg-group">
 				<h2 class='title'>개인정보 입력</h2>
 				<!-- 이름 -->
 				<div class='form-group'>
-					<input type="text" id="reg_mb_name" name="mb_name" value="<?php echo get_text($member['mb_name']) ?>" <?php echo $required ?> <?php echo $readonly; ?> class="form-control <?php echo $required ?> <?php echo $readonly ?>" size="10" placeholder="이름">
+					<input type="hidden" id="reg_mb_name" name="mb_name" value="박세진" <?php echo $required ?> <?php echo $readonly; ?> class="form-control <?php echo $required ?> <?php echo $readonly ?>" size="10" placeholder="이름">
 					<?php
 					if ($config['cf_cert_use']) {
 						if ($config['cf_cert_ipin'])
@@ -231,7 +231,7 @@ add_stylesheet("<link rel=\"stylesheet\" href=\"" . BP_CSS . "/member/member.bas
 
 				<?php } ?>
 
-				<?php if (isset($member['mb_open_date']) && $member['mb_open_date'] <= date("Y-m-d", G5_SERVER_TIME - ($config['cf_open_modify'] * 86400)) || empty($member['mb_open_date'])) { // 정보공개 수정일이 지났다면 수정가능  
+				<?php if (isset($member['mb_open_date']) && $member['mb_open_date'] <= date("Y-m-d", G5_SERVER_TIME - ($config['cf_open_modify'] * 86400)) || empty($member['mb_open_date'])) { // 정보공개 수정일이 지났다면 수정가능
 				?>
 					<div class="form-group form-check">
 						<label>
