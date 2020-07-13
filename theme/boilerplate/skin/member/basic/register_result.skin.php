@@ -18,10 +18,11 @@ add_stylesheet("<link rel=\"stylesheet\" href=\"" . BP_CSS . "/member/member.bas
     <div class="jumbotron">
         <h1 class="display-5">회원가입완료</h1>
         <p class="lead">
-            <i class="fa fa-gift" aria-hidden="true"></i> <strong><?php echo get_text($mb['mb_name']); ?></strong>님의 회원가입을 진심으로 축하합니다.
+            <i class="fa fa-gift" aria-hidden="true"></i> <strong><?php echo get_text($mb['mb_nick']); ?></strong>님의 회원가입을 진심으로 축하합니다.
             <?php if (is_use_email_certify()) {  ?>
                 <p class="result_txt">
                     회원 가입 시 입력하신 이메일 주소로 인증메일이 발송되었습니다.<br>
+                    메일이 안올시 스펨메일함을 확인해주세요. <br>
                     발송된 인증메일을 확인하신 후 인증처리를 하시면 사이트를 원활하게 이용하실 수 있습니다.
                 </p>
                 <div id="result_email">
