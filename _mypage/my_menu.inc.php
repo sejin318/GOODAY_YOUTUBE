@@ -24,7 +24,7 @@ if($config['bp_colorset'] =='colorset.dark.css'){
                     <a href='<?php echo BP_MYPAGE_URL ?>/my_article.php' class='nav-link mr-1'> <i class="fa fa-list" aria-hidden="true"></i> <span class="mypage-links">내글</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href='<?php echo BP_MYPAGE_URL ?>/my_point.php' class='nav-link mr-1'> <i class="fa fa-money" aria-hidden="true"></i> <span class="mypage-links">포인트</span></a>
+                    <a href='<?php echo BP_MYPAGE_URL ?>/my_point.php' class='nav-link mr-1'> <i class="fa fa-database" aria-hidden="true"></i> <span class="mypage-links">포인트</span></a>
                 </li>
                 <li class="nav-item">
                     <a href='<?php echo BP_MYPAGE_URL ?>/my_point_rank.php' class='nav-link mr-1'> <i class="fa fa-trophy" aria-hidden="true"></i> <span class="mypage-links">포인트순위</span></a>

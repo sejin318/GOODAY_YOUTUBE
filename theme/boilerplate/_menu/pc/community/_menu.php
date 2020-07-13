@@ -68,7 +68,7 @@ add_stylesheet('<link rel="stylesheet" href="' . BP_PC_MENU_URL . DIRECTORY_SEPA
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo G5_BBS_URL ?>/point.php"><i class="fa fa-money"></i> <span class='sr-only'><?php echo $member['mb_point'] ?></span></a>
+                            <a class="nav-link" href="<?php echo G5_BBS_URL ?>/point.php"><i class="fa fa-database"></i> <span class='sr-only'><?php echo $member['mb_point'] ?></span></a>
                         </li>
 
                     <?php } else { ?>
@@ -177,7 +177,7 @@ add_stylesheet('<link rel="stylesheet" href="' . BP_PC_MENU_URL . DIRECTORY_SEPA
                                 }
                                 echo "<a href='{$row2['me_link']}' target='_{$row2['me_target']}' class='sub-menu-link'>{$row2['me_name']}</a>";
                                 // echo "<script>console.log('Debug Objects: " . $row2['me_link']. $row2['me_target'] . "' );</script>";
-//                                echo $row2; 
+//                                echo $row2;
                                 $k++;
                             }   //end foreach $row2
 
