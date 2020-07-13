@@ -22,7 +22,6 @@ add_stylesheet("<link rel=\"stylesheet\" href=\"" . BP_CSS . "/member/member.bas
             <?php if (is_use_email_certify()) {  ?>
                 <p class="result_txt">
                     회원 가입 시 입력하신 이메일 주소로 인증메일이 발송되었습니다.<br>
-                    메일이 안올시 스펨메일함을 확인해주세요. <br>
                     발송된 인증메일을 확인하신 후 인증처리를 하시면 사이트를 원활하게 이용하실 수 있습니다.
                 </p>
                 <div id="result_email">
@@ -44,7 +43,8 @@ add_stylesheet("<link rel=\"stylesheet\" href=\"" . BP_CSS . "/member/member.bas
 
         <p class="result_txt">
             회원 탈퇴는 언제든지 가능하며 일정기간이 지난 후, 회원님의 정보는 삭제하고 있습니다.<br>
-            감사합니다.
+            감사합니다.<br>
+            <h5><strong>메일이 오지 않을 경우 스팸메일함을 확인해주세요.</strong></h5>
         </p>
 
         <p class="lead">
