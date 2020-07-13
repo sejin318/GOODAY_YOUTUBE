@@ -18,7 +18,8 @@ if ($view == "w")
 else if ($view == "c")
     $sql_common .= " and a.wr_id <> a.wr_parent ";
 else
-    $view = '';
+    $sql_common .= " and a.wr_id = a.wr_parent ";
+//    $view = '';
 
 $mb_id = isset($_GET['mb_id']) ? ($_GET['mb_id']) : '';
 $mb_id = substr(preg_replace('#[^a-z0-9_]#i', '', $mb_id), 0, 20);
@@ -48,7 +49,7 @@ $group_select .= '</select>';
 $list = array();
 $sql = " select a.*, b.bo_subject, b.bo_mobile_subject, c.gr_subject, c.gr_id {$sql_common} {$sql_order} limit {$from_record}, {$rows} ";
 $result = sql_query($sql);
-for ($i=0; $row=sql_fetch_array($result); $i++) {
+for ($i=0; $row=sql_fetch_array($result);) {
     $tmp_write_table = $g5['write_prefix'].$row['bo_table'];
 
     if ($row['wr_id'] == $row['wr_parent']) {
@@ -70,7 +71,7 @@ for ($i=0; $row=sql_fetch_array($result); $i++) {
         }
 
     } else {
-
+        continue; 
         // 코멘트
         $comment = '[코] ';
         $comment_link = '#c_'.$row['wr_id'];
@@ -106,6 +107,7 @@ for ($i=0; $row=sql_fetch_array($result); $i++) {
     $list[$i]['gr_subject'] = $row['gr_subject'];
     $list[$i]['bo_subject'] = ((G5_IS_MOBILE && $row['bo_mobile_subject']) ? $row['bo_mobile_subject'] : $row['bo_subject']);
     $list[$i]['wr_subject'] = $row2['wr_subject'];
+    $i++; 
 }
 
 $write_pages = get_paging(G5_IS_MOBILE ? $config['cf_mobile_pages'] : $config['cf_write_pages'], $page, $total_page, "?gr_id=$gr_id&amp;view=$view&amp;mb_id=$mb_id&amp;page=");

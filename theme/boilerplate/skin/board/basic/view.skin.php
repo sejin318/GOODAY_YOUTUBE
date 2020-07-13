@@ -232,6 +232,11 @@ if ($board['bb_use_font']) {
                 <?php if ($good_href) { ?>
                     <div class='btn-group mr-1'>
                         <a href="<?php echo $good_href . '&amp;' . $qstr ?>" id="good_button" class="btn btn-outline-primary">
+                           <?php echo 
+                            "<script>
+                           $('#good_button').click( function(){window.location.reload();} );
+                           $('#nogood_button').click( function(){window.location.reload();} ); 
+                           </script>" ?>
                             <i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span class='d-none d-md-inline'> 추천</span><?php echo number_format($view['wr_good']) ?>
                         </a>
                     </div>
