@@ -113,6 +113,16 @@ add_stylesheet("<link rel=\"stylesheet\" href=\"" . BP_CSS . "/member/member.bas
 					<?php } ?>
 				</div>
 
+                
+                <!-- 성별 -->
+				<div class='form-group'>
+                    <input type="hidden" name="mb_sex_default" value="<?php echo isset($member['mb_sex']) ? get_text($member['mb_nick']) : ''; ?>">
+                    <p>성별:</p>
+                    <input type="radio" name="mb_sex" value="M" checked="checked" /> 남자
+                    <input type="radio" name="mb_sex" value="F" /> 여자
+				</div>
+				
+
 				<?php if ($config['cf_use_homepage']) { ?>
 					<!-- 홈페이지 -->
 					<div class="form-group">

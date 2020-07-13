@@ -21,9 +21,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <a href="<?php echo G5_URL ?>" target="_blank"><?php echo $config['cf_title'] ?></a>
         </span>
         <p style="margin:20px 0 0;padding:30px 30px 50px;min-height:200px;height:auto !important;height:200px;border-bottom:1px solid #eee">
-            <b><?php echo $mb_name ?></b> 님께서 회원가입 하셨습니다.<br>
+            <b><?php echo $mb_nick ?></b> 님께서 회원가입 하셨습니다.<br>
             회원 아이디 : <b><?php echo $mb_id ?></b><br>
-            회원 이름 : <?php echo $mb_name ?><br>
             회원 닉네임 : <?php echo $mb_nick ?><br>
             추천인 아이디 : <?php echo $mb_recommend ?>
         </p>
