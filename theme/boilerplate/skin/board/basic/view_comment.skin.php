@@ -134,8 +134,8 @@ if (!defined('_GNUBOARD_')) {
             <span class="sr-only">내용</span>
 
             <?php if ($comment_min || $comment_max) { ?><strong id="char_cnt"><span id="char_count"></span>글자</strong><?php } ?>
-            <input type="checkbox" name="wr_secret" value="secret" id="wr_secret" class="selec_chk">
-            <label for="wr_secret"><span></span>비밀글</label>
+            <!-- <input type="checkbox" name="wr_secret" value="secret" id="wr_secret" class="selec_chk">
+            <label for="wr_secret"><span></span>비밀글</label> -->
             <div class="input-group">
                 <textarea id="wr_content" name="wr_content" maxlength="10000" required class="required form-control" title="내용" placeholder="댓글내용을 입력해주세요" <?php if ($comment_min || $comment_max) { ?> onkeyup="check_byte('wr_content', 'char_count');" <?php } ?>><?php echo $c_wr_content; ?></textarea>
                 <span class="input-group-append">
