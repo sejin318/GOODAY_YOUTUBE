@@ -37,7 +37,7 @@ $url = get_text($url);
 
 include_once($member_skin_path.'/member_confirm.skin.php');
 
-echo "<script>console.log($member_skin_path);</script>"
+echo "<script>console.log($member_skin_path);</script>";
 
 include_once('./_tail.sub.php');
 ?>

@@ -381,6 +381,10 @@ if ($board['bb_use_font']) {
     <?php
     // 코멘트 입출력
     include_once G5_BBS_PATH . '/view_comment.php';
+    echo "<br>"; 
+    echo "<br>"; 
+    echo "<br>"; 
+    include_once (G5_BBS_PATH.'/list2.php');
     ?>
 </article>
 <!-- } 게시판 읽기 끝 -->

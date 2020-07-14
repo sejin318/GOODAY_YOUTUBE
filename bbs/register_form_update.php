@@ -241,25 +241,11 @@ if ($w == '') {
                      mb_9 = '{$mb_9}',
                      mb_10 = '{$mb_10}'
                      {$sql_certify} ";
-    
+
     // 이메일 인증을 사용하지 않는다면 이메일 인증시간을 바로 넣는다
     if (!$config['cf_use_email_certify'])
         $sql .= " , mb_email_certify = '".G5_TIME_YMDHIS."' ";
     sql_query($sql);
-    
-    // update // 
-    
-    $sql = " update {$g5['member_table']}
-                set mb_sex = 'M'
-              where mb_no = 1104 FROM {$g5['member_table']})"; 
-    sql_query($sql); 
-    
-    $sql = " update {$g5['member_table']}
-                set md_id = 'dragon'
-              where mb_no = 1104 FROM {$g5['member_table']})"; 
-    sql_query($sql); 
-        
-        
 
     // 회원가입 포인트 부여
     insert_point($mb_id, $config['cf_register_point'], '회원가입 축하', '@member', $mb_id, '회원가입');
