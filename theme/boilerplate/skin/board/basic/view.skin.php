@@ -48,8 +48,7 @@ if ($board['bb_use_font']) {
             <!-- <div class="profile-img mr-1"><?php echo get_member_profile_img($view['mb_id']) ?></div> -->
             <div class="profile-comment text-break">
                 <span class="sr-only">작성자</span>
-                <?php echo $view['name'] ?>
-                <?php
+                <?php include_once G5_LIB_PATH."/level_icon.lib.php"; echo get_level_icon($view['mb_id'], 30); ?> <?php echo $view['name'] ?>                 <?php
                 if ($is_ip_view) {
                     echo "<span class='d-none d-md-inline'> ($ip)</span>";
                 } ?>
@@ -387,7 +386,7 @@ if ($board['bb_use_font']) {
     include_once (G5_BBS_PATH.'/list2.php');
     ?>
 </article>
-<!-- } 게시판 읽기 끝 -->
+<!-- } 게시판 읽기 끝 <?php echo $view['name'] ?>-->
 
 <script>
     <?php if ($board['bo_download_point'] < 0) { ?>
