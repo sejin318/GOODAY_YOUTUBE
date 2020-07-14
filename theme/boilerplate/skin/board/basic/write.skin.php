@@ -54,7 +54,7 @@ if ($board['bb_use_font']) {
                     $option_hidden .= '<input type="hidden" name="secret" value="secret">';
                 }
             }
-            if ($is_mail) {
+            if (false) {
                 $option .= PHP_EOL . '<div class="form-check form-check-inline"><input type="checkbox" id="mail" name="mail"  class="form-check-input" value="mail" ' . $recv_email_checked . '>' . PHP_EOL . '<label class="form-check-label" for="mail"><span></span>답변메일받기</label></div>';
             }
         }
@@ -180,7 +180,7 @@ if ($board['bb_use_font']) {
                     <!-- 최소/최대 글자 수 사용 시 -->
                     <p id="char_count_desc">이 게시판은 최소 <strong><?php echo $write_min; ?></strong>글자 이상, 최대 <strong><?php echo $write_max; ?></strong>글자 이하까지 글을 쓰실 수 있습니다.</p>
                 <?php } ?>
-                <?php echo $editor_html; // 에디터 사용시는 에디터로, 아니면 textarea 로 노출 
+                <?php echo $editor_html; // 에디터 사용시는 에디터로, 아니면 textarea 로 노출
                 ?>
                 <?php if ($write_min || $write_max) { ?>
                     <!-- 최소/최대 글자 수 사용 시 -->
@@ -274,7 +274,7 @@ if ($board['bb_use_font']) {
         }
 
         function fwrite_submit(f) {
-            <?php echo $editor_js; // 에디터 사용시 자바스크립트에서 내용을 폼필드로 넣어주며 내용이 입력되었는지 검사함   
+            <?php echo $editor_js; // 에디터 사용시 자바스크립트에서 내용을 폼필드로 넣어주며 내용이 입력되었는지 검사함
             ?>
 
             var subject = "";
@@ -323,7 +323,7 @@ if ($board['bb_use_font']) {
                 }
             }
 
-            <?php echo $captcha_js; // 캡챠 사용시 자바스크립트에서 입력된 캡챠를 검사함  
+            <?php echo $captcha_js; // 캡챠 사용시 자바스크립트에서 입력된 캡챠를 검사함
             ?>
 
             document.getElementById("btn_submit").disabled = "disabled";
