@@ -232,10 +232,10 @@ if ($board['bb_use_font']) {
                 <?php if ($good_href) { ?>
                     <div class='btn-group mr-1'>
                         <a href="<?php echo $good_href . '&amp;' . $qstr ?>" id="good_button" class="btn btn-outline-primary">
-                           <?php echo 
+                           <?php echo
                             "<script>
                            $('#good_button').click( function(){window.location.reload();} );
-                           $('#nogood_button').click( function(){window.location.reload();} ); 
+                           $('#nogood_button').click( function(){window.location.reload();} );
                            </script>" ?>
                             <i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span class='d-none d-md-inline'> 추천</span><?php echo number_format($view['wr_good']) ?>
                         </a>
@@ -381,6 +381,7 @@ if ($board['bb_use_font']) {
     <?php
     // 코멘트 입출력
     include_once G5_BBS_PATH . '/view_comment.php';
+    include_once $board_skin_path . DIRECTORY_SEPARATOR . '_list.text.inc.php';
     ?>
 </article>
 <!-- } 게시판 읽기 끝 -->
