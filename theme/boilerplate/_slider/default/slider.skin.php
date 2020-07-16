@@ -49,7 +49,7 @@ add_stylesheet('<link rel="stylesheet" href="' . BP_SLIDER_SKIN_URL . '/default/
                 echo "'<div class='carousel-item {$active} carousel-item-num{$x} {$_item['bss_class']}' {$interval}>";
                 // only put a link to the entire img when the index equals to 2
                 if($x == 2){
-                    echo "<a href='http://www.goodayoutube.com/bbs/board.php?bo_table=notice&wr_id=2'>$slider_image_tag</a>";
+                    echo "<a href='https://www.goodayoutube.com/bbs/board.php?bo_table=notice&wr_id=2'>$slider_image_tag</a>";
                 } else {
                     echo $slider_image_tag;
                 }
