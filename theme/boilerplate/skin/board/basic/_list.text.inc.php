@@ -7,7 +7,6 @@ if (!defined('_GNUBOARD_')) {
     exit;
 }
 ?>
-
 <!--######################### 목록 시작#########################-->
 <div class="board-table-wrap mb-4">
     <table class='table table-striped'>
@@ -103,8 +102,7 @@ if (!defined('_GNUBOARD_')) {
                         </div>
                         <div class='wr-info d-block d-sm-none'>
                             <ul class="m-0 p-0">
-<!--                               edit-->
-                                <li><?php include_once G5_LIB_PATH."/level_icon.lib.php"; echo get_level_icon($list[$i]['mb_id'], 20); ?><?php echo $list[$i]['name'] ?>  </li>
+                                <li><?php echo $list[$i]['name'] ?></li>
                                 <li><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $list[$i]['wr_hit'] ?></li>
                                 <?php if ($is_good) { ?><li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <?php echo $list[$i]['wr_good'] ?></li><?php } ?>
                                 <?php if ($is_nogood) { ?><li><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> <?php echo $list[$i]['wr_nogood'] ?></li><?php } ?>
@@ -112,7 +110,7 @@ if (!defined('_GNUBOARD_')) {
                             </ul>
                         </div>
                     </td>
-                    <td class="tcell name"><?php include_once G5_LIB_PATH."/level_icon.lib.php"; echo get_level_icon($list[$i]['mb_id'], 20); ?><?php echo $list[$i]['name'] ?></td>
+                    <td class="tcell name"><?php echo $list[$i]['name'] ?></td>
                     <td class="tcell hit"><?php echo $list[$i]['wr_hit'] ?></td>
                     <?php if ($is_good) { ?><td class="tcell good"><?php echo $list[$i]['wr_good'] ?></td><?php } ?>
                     <?php if ($is_nogood) { ?><td class="tcell nogood"><?php echo $list[$i]['wr_nogood'] ?></td><?php } ?>

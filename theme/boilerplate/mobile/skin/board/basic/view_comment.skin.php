@@ -46,12 +46,12 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
                     </ul>
                 </div>
                 <script>
-                $(function() {			    
+                $(function() {
                     // 댓글 옵션창 열기
                     $(".btn_cm_opt").on("click", function(){
                         $(this).parent("div").children(".bo_vc_act").show();
                     });
-                            
+
                     // 댓글 옵션창 닫기
                     $(document).mouseup(function (e){
                         var container = $(".bo_vc_act");
@@ -112,7 +112,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
         <textarea id="wr_content" name="wr_content" required title="댓글 내용"
         <?php if ($comment_min || $comment_max) { ?>onkeyup="check_byte('wr_content', 'char_count');"<?php } ?> placeholder="댓글내용을 입력해주세요"><?php echo $c_wr_content; ?></textarea>
         <?php if ($comment_min || $comment_max) { ?><script> check_byte('wr_content', 'char_count'); </script><?php } ?>
-                
+
         <div class="bo_vc_w_wr">
             <div class="bo_vc_w_info">
                 <?php if ($is_guest) { ?>
@@ -326,11 +326,11 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
         );
 
 
-           
+
     });
     <?php } ?>
 
-    $(function() {            
+    $(function() {
         //댓글열기
         $(".cmt_btn").click(function(){
             $(this).toggleClass("cmt_btn_op");

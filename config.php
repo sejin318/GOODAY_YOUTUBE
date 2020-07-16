@@ -26,8 +26,8 @@ if (PHP_VERSION >= '5.1.0') {
 보안서버주소가 없다면 공란으로 두시면 되며 보안서버주소 뒤에 / 는 붙이지 않습니다.
 입력예) https://www.domain.com:443/gnuboard5
 */
-define('G5_DOMAIN', '');
-define('G5_HTTPS_DOMAIN', '');
+define('G5_DOMAIN', 'https://www.goodayoutube.com');
+define('G5_HTTPS_DOMAIN', 'https://www.goodayoutube.com');
 
 // 디버깅 상수, 실제 서버운영시 false 로 설정해 주제요.
 define('G5_DEBUG', false);
@@ -43,7 +43,7 @@ define('G5_DB_CHARSET', 'utf8');
 www.sir.kr 과 sir.kr 도메인은 서로 다른 도메인으로 인식합니다. 쿠키를 공유하려면 .sir.kr 과 같이 입력하세요.
 이곳에 입력이 없다면 www 붙은 도메인과 그렇지 않은 도메인은 쿠키를 공유하지 않으므로 로그인이 풀릴 수 있습니다.
 */
-define('G5_COOKIE_DOMAIN',  '');
+define('G5_COOKIE_DOMAIN',  '.goodayoutube.com');
 
 define('G5_DBCONFIG_FILE',  'dbconfig.php');
 
@@ -227,7 +227,7 @@ define('G5_VISIT_BROWSCAP_USE', false);
 표시되는 부분은 \\1 과 같이 사용하시면 되고 숨길 부분은 ♡등의
 다른 문자를 적어주시면 됩니다.
 */
-define('G5_IP_DISPLAY', '\\1.♡.\\3.\\4');
+define('G5_IP_DISPLAY', '\\1.\\2');
 
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on') {   //https 통신일때 daum 주소 js
     define('G5_POSTCODE_JS', '<script src="https://spi.maps.daum.net/imap/map_js_init/postcode.v2.js"></script>');

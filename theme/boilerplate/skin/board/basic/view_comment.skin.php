@@ -38,8 +38,7 @@ if (!defined('_GNUBOARD_')) {
                 <header class='comments-header pull-left' style="z-index:<?php echo $cmt_sv; ?>">
                     <h2><?php echo get_text($list[$i]['wr_name']); ?>님의 <?php if ($cmt_depth) { ?><span class="sr-only">댓글의</span><?php } ?> 댓글</h2>
                     <div class='wr-info'>
-<!--                       edit-->
-                        <?php include_once G5_LIB_PATH."/level_icon.lib.php"; echo get_level_icon($list[$i]['mb_id'], 20); ?> <?php echo $list[$i]['name'] ?>                        
+                        <?php echo $list[$i]['name'] ?>
                         <?php if ($is_ip_view) { ?>
                             <span class="sr-only">아이피</span>
                             <span>(<?php echo $list[$i]['ip']; ?>)</span>

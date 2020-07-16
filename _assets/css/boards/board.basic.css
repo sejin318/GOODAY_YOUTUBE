@@ -182,8 +182,6 @@
 .comment-form { padding: 0; }
 .comment-form h2 { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
-#wr_content { min-height: 180px; }
-
 .image-preview-wrap .comment-image-preview { width: auto; height: auto; max-width: 100%; max-height: 180px; }
 .image-preview-wrap .delete-item { width: 31px; height: 31px; position: absolute; right: .5rem; top: .5rem; z-index: 2; }
 .image-preview-wrap .insert-item { width: 31px; height: 31px; position: absolute; right: .5rem; top: 2.5rem; z-index: 2; }

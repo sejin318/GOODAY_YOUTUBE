@@ -48,7 +48,8 @@ if ($board['bb_use_font']) {
             <!-- <div class="profile-img mr-1"><?php echo get_member_profile_img($view['mb_id']) ?></div> -->
             <div class="profile-comment text-break">
                 <span class="sr-only">작성자</span>
-                <?php include_once G5_LIB_PATH."/level_icon.lib.php"; echo get_level_icon($view['mb_id'], 30); ?> <?php echo $view['name'] ?>                 <?php
+                <?php echo $view['name'] ?>
+                <?php
                 if ($is_ip_view) {
                     echo "<span class='d-none d-md-inline'> ($ip)</span>";
                 } ?>
@@ -231,10 +232,10 @@ if ($board['bb_use_font']) {
                 <?php if ($good_href) { ?>
                     <div class='btn-group mr-1'>
                         <a href="<?php echo $good_href . '&amp;' . $qstr ?>" id="good_button" class="btn btn-outline-primary">
-                           <?php echo 
+                           <?php echo
                             "<script>
                            $('#good_button').click( function(){window.location.reload();} );
-                           $('#nogood_button').click( function(){window.location.reload();} ); 
+                           $('#nogood_button').click( function(){window.location.reload();} );
                            </script>" ?>
                             <i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span class='d-none d-md-inline'> 추천</span><?php echo number_format($view['wr_good']) ?>
                         </a>
@@ -380,13 +381,10 @@ if ($board['bb_use_font']) {
     <?php
     // 코멘트 입출력
     include_once G5_BBS_PATH . '/view_comment.php';
-    echo "<br>"; 
-    echo "<br>"; 
-    echo "<br>"; 
-    include_once (G5_BBS_PATH.'/list2.php');
+    include_once $board_skin_path . DIRECTORY_SEPARATOR . '_list.text.inc.php';
     ?>
 </article>
-<!-- } 게시판 읽기 끝 <?php echo $view['name'] ?>-->
+<!-- } 게시판 읽기 끝 -->
 
 <script>
     <?php if ($board['bo_download_point'] < 0) { ?>

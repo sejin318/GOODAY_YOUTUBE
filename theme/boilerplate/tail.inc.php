@@ -60,7 +60,7 @@ if ($config['bp_container'] == 'container-fluid') {
                         <li class=""><span>통신판매업신고</span> : 제100-서울00-0000호</li>
                     </ul>
                     <ul class="tail-item menu-3">
-                        <li class=""><span>주소</span> : (37126) 경상북도 상주시 사벌국면 퇴강물미길 22</li>
+                        <li class=""><span>주소</span> : (000-000) 경상북도 상주시 사벌국면 퇴강물미길 22</li>
                         <li class=""><span>대표전화</span> : 02-000-1234 </li>
                         <li class=""><span>개인정보책임자</span> : 책임자 (mail@email.com)</li>
                     </ul>
