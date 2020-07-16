@@ -17,7 +17,7 @@ $g5['title'] = strip_tags($g5['title']);
 $g5_head_title = strip_tags($g5_head_title);
 
 // 현재 접속자
-// 게시판 제목에 ' 포함되면 오류 발생 
+// 게시판 제목에 ' 포함되면 오류 발생
 $g5['lo_location'] = addslashes($g5['title']);
 if (!$g5['lo_location']) {
     $g5['lo_location'] = addslashes(clean_xss_tags($_SERVER['REQUEST_URI']));
@@ -33,6 +33,7 @@ if ($is_member) {
 <html lang="ko">
 
 <head>
+    <script data-ad-client="ca-pub-1529180002223470" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta charset="utf-8">
     <?php
 
@@ -66,7 +67,7 @@ if ($is_member) {
     <meta name="msapplication-TileImage" content="/_assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#33333">
 -->
-    
+
 <!--    <link rel="apple-touch-icon" sizes="60x60" href="/_assets/favicon/dog.png">-->
     <link rel="shortcut icon" href="/_assets/favicon/gooday_logo.ico" type="image/x-ico" />
 
@@ -124,7 +125,7 @@ if ($is_member) {
         add_javascript('<script src="' . BP_MHEAD . '/dist/mhead.js"></script>', 100);
     }
     ?>
-    <!--  
+    <!--
     <script src="<?php echo BP_OFFCANVAS ?>/dist/_js/js-offcanvas.pkgd.min.js"></script>
     <script src="<?php echo BP_BOOTSTRAP ?>/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?php echo BP_ASSETS_URL ?>/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
