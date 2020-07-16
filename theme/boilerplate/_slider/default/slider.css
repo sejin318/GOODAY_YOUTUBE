@@ -37,7 +37,22 @@ div.carousel-item.carousel-item-num2.font-light.active div p a {
 @media (max-width: 550px) {
     .carousel-indicators { 
         display: none !important;   
-    } 
+    }
+    .slider-0 {
+     content:url("https://www.goodayoutube.com/data/bp_slider/1.png");
+    }
+    .slider-1 {
+     content:url("https://www.goodayoutube.com/data/bp_slider/2.png");
+    }
+    .slider-2 {
+     content:url("https://www.goodayoutube.com/data/bp_slider/3.png");
+    }
+    .slider-3 {
+     content:url("https://www.goodayoutube.com/data/bp_slider/4.png");
+    }
+    #default-slider {
+        margin-bottom: -60px; 
+    }
 }
 
 

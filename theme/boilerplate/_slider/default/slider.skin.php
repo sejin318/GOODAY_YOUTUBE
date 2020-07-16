@@ -36,7 +36,7 @@ add_stylesheet('<link rel="stylesheet" href="' . BP_SLIDER_SKIN_URL . '/default/
             foreach ($item as $_item) {
                 $slider_image_tag = '';
                 if ($_item['bss_image']) {
-                    $slider_image_tag = "<img src='" . BP_SLIDERSAVE_URL . DIRECTORY_SEPARATOR . $_item['bss_image'] . "' class='d-block w-100' alt='{$_item['bss_name']}'>";
+                    $slider_image_tag = "<img src='" . BP_SLIDERSAVE_URL . DIRECTORY_SEPARATOR . $_item['bss_image'] . "' class='d-block w-100 slider-$x' alt='{$_item['bss_name']}'>";
                 }
                 $active = '';
                 if ($x == 0) {
