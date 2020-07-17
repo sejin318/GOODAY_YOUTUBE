@@ -117,7 +117,7 @@
 .board-view-wrap .board-contents-wrap .board-contents img { max-width: 100%; }
 .board-view-wrap .image-exif { position: relative; width: fit-content; }
 .board-view-wrap .image-exif .show-item { display: block !important; }
-.board-view-wrap .image-exif .view-exif-info { background-color: Transparent; background-repeat: no-repeat; border: none; cursor: pointer; overflow: hidden; outline: none; right: 0; top: 0; position: absolute; padding: .5rem; }
+.board-view-wrap .image-exif .view-exif-info { background-color: Transparent; background-repeat: no-repeat; border: none; cursor: pointer; overflow: hidden; outline: none; right: 0; top: 0; position: absolute; padding: .5rem; visibility: hidden;}
 .board-view-wrap .image-exif .view-exif-info i { font-size: 2.2rem; background-color: transparent; opacity: .7; color: #ddd; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
 .board-view-wrap .image-exif .view-exif-info i:hover { color: #0033ff; }
 .board-view-wrap .image-exif .exif-info { padding: .5rem; background: rgba(0, 0, 0, 0.5); position: absolute; right: 30px; top: 0px; border: 1px solid rgba(0, 0, 0, 0.5); display: none; z-index: 3; }
