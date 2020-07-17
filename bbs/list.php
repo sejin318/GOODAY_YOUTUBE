@@ -54,6 +54,8 @@ if ($sca || $stx || $stx === '0') {     //검색이면
     $sql = " SELECT COUNT(DISTINCT `wr_parent`) AS `cnt` FROM {$write_table} WHERE {$sql_search} ";
     $row = sql_fetch($sql);
     $total_count = $row['cnt'];
+    
+    echo "<script>console.log($total_count);<script/>"; 
     /*
     $sql = " select distinct wr_parent from {$write_table} where {$sql_search} ";
     $result = sql_query($sql);

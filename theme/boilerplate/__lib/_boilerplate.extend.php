@@ -346,12 +346,12 @@ if (!function_exists('bp_tab_latest')) {
                 . "-tab' data-toggle='pill' href='#pills-" 
                 . $bo_table 
                 . $uniqid 
-                . "' subref='http://www.goodayoutube.com/bbs/board.php?bo_table=$bo_table"
+                . "' subref='https://www.goodayoutube.com/bbs/board.php?bo_table=$bo_table"
                 . "' role='tab' aria-controls='pills-" 
                 . $bo_table 
                 . $uniqid 
                 . "' aria-selected='true'>" 
-                . "<div class='inner-atag' clicked='$active' href='http://www.goodayoutube.com/bbs/board.php?bo_table=$bo_table'>"
+                . "<div class='inner-atag' clicked='$active' href='https://www.goodayoutube.com/bbs/board.php?bo_table=$bo_table'>"
                 . $board["bo_subject"] 
                 . "</div>"
                 . "</a></li>";
