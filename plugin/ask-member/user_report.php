@@ -78,9 +78,9 @@ include_once G5_THEME_PATH . '/head.sub.php';
         <div class='col-sm-12 col-md-12'>
             <div class='contents-box'>
                 <div class='alert alert-info'>
-                    · 신고는 반대 의견을 표시하는 기능이 아닙니다. <br />
-                    · 신고 대신 반대 의견을 적어 보시는 것은 어떨까요?<br />
-                    · 다른 의견에 대한 경청과 예의를 갖춘 토론이 댓글을 더 가치있게 합니다.
+                    · 커뮤니티 이용자들은 누구나 커뮤니티 이용 규정을 지키지 않은 다른 이용자를 신고할 수 있습니다.<br />
+                    · 신고자의 신고 내용이 타당할 경우, 신고자에게 100포인트가 부여됩니다.<br />
+                    · 반복적으로 허위 신고를 작성한 경우, 신고자도 제재 대상이 될 수 있습니다.
                 </div>
                 <form action='./user_report.update.php' method="post" class="form">
                     <input type="hidden" name='reporter_id' value="<?php echo $member['mb_id'] ?>">

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Default Mobile menu */
-.mobile-menu-wrap .mobile-menu-header { height: 56px; position: relative; border-bottom: 1px solid #dee2e6; background-color: gray; }
+.mobile-menu-wrap .mobile-menu-header { height: 56px; position: relative; border-bottom: 1px solid #dee2e6; background-color: #6c757d; }
 .mobile-menu-wrap .mobile-menu-header h2 { font-size: 1.875rem; line-height: 56px; text-align: center; }
 .mobile-menu-wrap .mobile-menu-header .mobile-menu-close { position: absolute; right: 10px; top: 12px; }
 .mobile-menu-wrap .mobile-menu-header .mobile-menu-close i { font-size: 2rem; text-align: center; color: #adb5bd; }
@@ -12,7 +12,7 @@
 .mobile-menu-wrap .mobile-menu-body .mobile-menu .sub-menu-wrap .sub-menu-list { padding-left: 1rem; }
 
 /* 모바일 회원 메뉴 */
-.mobile-member-wrap .mobile-menu-header { height: 56px; position: relative; border-bottom: 1px solid #dee2e6; background-color: gray; }
+.mobile-member-wrap .mobile-menu-header { height: 56px; position: relative; border-bottom: 1px solid #dee2e6; background-color: #6c757d; }
 .mobile-member-wrap .mobile-menu-header h2 { font-size: 1.875rem; line-height: 56px; text-align: center; }
 .mobile-member-wrap .mobile-menu-header .mobile-menu-close { position: absolute; left: 10px; top: 12px; }
 .mobile-member-wrap .mobile-menu-header .mobile-menu-close i { font-size: 2rem; text-align: center; color: #adb5bd; }
