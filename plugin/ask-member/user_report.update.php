@@ -96,7 +96,7 @@ if ($_POST) {
         $validated_data['type'] = $ar_type;
         $validated_data['ip'] = $ipaddr;
         DB::report_save($validated_data);
-        Util::alert_close('신고가 완료되었습니다.\\n\\n신고 처리는 1일에서 최대 7일이 소요될 수 있으며\\n\\n처리 결과는 통보하지 않습니다.');
+        Util::alert_close('깨끗한 굿데이유튜브를 만들기 위해 노력해주셔서 감사합니다.\\n\\n신고 내용에 대한 처리 결과는 1일 이내 쪽지로 통보됩니다.\\n\\n신고자의 신고 내용이 타당할 경우, 신고자에게 100포인트가 부여됩니다.\\n\\n단, 반복적으로 허위 신고를 작성한 경우, 신고자도 제재 대상이 될 수 있습니다.');
         exit;
     }
 }

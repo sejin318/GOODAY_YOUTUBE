@@ -38,7 +38,7 @@ add_stylesheet('<link rel="stylesheet" href="' . BP_ASSETS_URL . '/css/bp_pages.
     <div class='col-sm-12 col-md-12'>
         <div class='tab-skin-wrap latst-no-title latest-simple'>
             <?php 
-            echo bp_tab_latest('theme/basic', 'free,recommend', 5, 33); 
+            echo bp_tab_latest('theme/basic', 'free,recommend,notice', 5, 33); 
             echo '</br>'; 
             echo bp_tab_latest('theme/basic', 'entertainment,animal,tech_science', 5, 33); 
             echo "<script>

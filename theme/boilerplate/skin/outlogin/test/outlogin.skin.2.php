@@ -5,7 +5,7 @@
  * 소셜 로그인 스킨
  * boilerplate.kr
  * 타 프로그램에 포함할 수 없으며 재배포 금지합니다.
- * 
+ *
  * 아웃로그인 - 로그아웃
  */
 
@@ -13,26 +13,22 @@ if (!defined("_GNUBOARD_")) {
     exit; // 개별 페이지 접근 불가
 }
 add_stylesheet("<link rel=\"stylesheet\" href=\"" . BP_CSS . "/outlogin/outlogin.basic.css\">", 50);
-
 ?>
-
 <!-- 로그인 후 아웃로그인 시작 { -->
-<section class='outlogin-mobile-basic-wrap background-9'>
+<section class='outlogin-basic-wrap border background-9'>
     <h2 class="sr-only">나의 회원정보</h2>
     <div id="ol_after_hd" class='d-flex member-info p-2 border-color-7'>
-    
-<!--
-        <div class="profile-image flex-shrink-1">
+        <!-- <div class="profile-image flex-shrink-1">
             <?php echo get_member_profile_img($member['mb_id']); ?>
-        </div>
--->
+        </div> -->
         <div class="w-100 align-self-center">
-            <span class="nick-name"><?php include_once G5_LIB_PATH."/level_icon.lib.php"; echo get_level_icon($member['mb_id'], 20); ?>  <?php echo $nick ?></span>님
+            <span class="nick-name"><?php include_once G5_LIB_PATH."/level_icon.lib.php"; echo get_level_icon($member['mb_id'], 20); ?>                      
+<?php echo $nick ?></span>님
             <div class='member-modify btn-navbar pt-1'>
                 <a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=register_form.php" id="ol_after_info" title="정보수정" class=''><i class="fa fa-pencil" aria-hidden="true"></i> <span class='sr-only'>정보</span> 수정 </a>
-                / <a href="<?php echo G5_BBS_URL ?>/logout.php" id="ol_after_logout"><i class="fa fa-sign-out" aria-hidden="true"></i> 로그아웃</a>
+                <a href="<?php echo G5_BBS_URL ?>/logout.php" id="ol_after_logout"><i class="fa fa-sign-out" aria-hidden="true"></i> 로그아웃</a>
                 <?php if ($is_admin == 'super' || $is_auth) {  ?>
-                    / <a href="<?php echo correct_goto_url(G5_ADMIN_URL); ?>" class="admin-link" title="관리자"><i class="fa fa-cog"></i> <span class='sr-only'>관리자</span></a>
+                    <a href="<?php echo correct_goto_url(G5_ADMIN_URL); ?>" class="admin-link" title="관리자"><i class="fa fa-cog"></i> <span class='sr-only'>관리자</span></a>
                 <?php }  ?>
             </div>
         </div>
@@ -65,6 +61,10 @@ add_stylesheet("<link rel=\"stylesheet\" href=\"" . BP_CSS . "/outlogin/outlogin
             <?php } ?>
         </div>
     </div>
+    <?php
+    //게시판 즐겨찾기 출력 - 테마 기본환경설정
+    echo bp_favorite_list();
+    ?>
 </section>
 
 <script>

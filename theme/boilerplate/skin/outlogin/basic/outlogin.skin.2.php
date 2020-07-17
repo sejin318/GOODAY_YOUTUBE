@@ -22,7 +22,7 @@ add_stylesheet("<link rel=\"stylesheet\" href=\"" . BP_CSS . "/outlogin/outlogin
             <?php echo get_member_profile_img($member['mb_id']); ?>
         </div> -->
         <div class="w-100 align-self-center">
-            <span class="nick-name"><?php echo $nick ?></span>님
+            <span class="nick-name"><?php include_once G5_LIB_PATH."/level_icon.lib.php"; echo get_level_icon($member['mb_id'], 20); ?><?php echo $nick ?></span>님
             <div class='member-modify btn-navbar pt-1'>
                 <a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=register_form.php" id="ol_after_info" title="정보수정" class=''><i class="fa fa-pencil" aria-hidden="true"></i> <span class='sr-only'>정보</span> 수정 </a>
                 <a href="<?php echo G5_BBS_URL ?>/logout.php" id="ol_after_logout"><i class="fa fa-sign-out" aria-hidden="true"></i> 로그아웃</a>

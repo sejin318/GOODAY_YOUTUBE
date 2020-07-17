@@ -88,10 +88,12 @@ add_stylesheet('<link rel="stylesheet" href="' . BP_MOBILE_MENU_URL . DIRECTORY_
 
 <!-- Mobile Left side menu -->
 <div class="js-offcanvas mobile-menu-wrap" data-offcanvas-options='{"modifiers":"left,push"}' id="left-side-menu" role="complementary">
+<!--
     <div class='mobile-menu-header'>
         <h2>Menu</h2>
         <a class='mobile-menu-close js-offcanvas-close' aria-controls="left-side-menu" href="#close-mobile-menu"><span class="sr-only">Close</span><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
     </div>
+-->
     <div class='mobile-menu-body'>
         <?php
         //게시판 즐겨찾기 출력 - 테마 기본환경설정
@@ -154,8 +156,10 @@ add_stylesheet('<link rel="stylesheet" href="' . BP_MOBILE_MENU_URL . DIRECTORY_
 <!-- Mobile Right side menu -->
 <nav class="js-offcanvas mobile-member-wrap" data-offcanvas-options=' {"modifiers":"right,push"}' id="right-side-menu" role="complementary">
     <div class='mobile-menu-header'>
+<!--#6c757d
         <h2>Member</h2>
         <a class='mobile-menu-close js-offcanvas-close' aria-controls="right-side-menu" href="#close-mobile-menu"><span class="sr-only">Close</span><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+-->
     </div>
     <!-- 아웃로그인 -->
     <div class='outlogin-mobile-wrap'>
