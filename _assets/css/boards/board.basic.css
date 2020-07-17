@@ -114,8 +114,8 @@
 .board-view-wrap .befor-next-buttons .nb_date { font-size: .875rem; color: #6c757d; }
 .board-view-wrap .board-contents-wrap img { max-width: 100%; height: auto; }
 .board-view-wrap .board-contents-wrap .board-contents { min-height: 100px; white-space: normal; word-break: break-all; }
-.board-view-wrap .board-contents-wrap .board-contents img { max-width: 100%; }
-.board-view-wrap .image-exif { position: relative; width: fit-content; }
+.board-view-wrap .board-contents-wrap .board-contents img { max-width: 80%; width: -webkit-fill-available;}
+.board-view-wrap .image-exif { position: relative; //width: fit-content; }
 .board-view-wrap .image-exif .show-item { display: block !important; }
 .board-view-wrap .image-exif .view-exif-info { background-color: Transparent; background-repeat: no-repeat; border: none; cursor: pointer; overflow: hidden; outline: none; right: 0; top: 0; position: absolute; padding: .5rem; visibility: hidden;}
 .board-view-wrap .image-exif .view-exif-info i { font-size: 2.2rem; background-color: transparent; opacity: .7; color: #ddd; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
